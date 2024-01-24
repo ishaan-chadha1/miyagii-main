@@ -7,6 +7,7 @@ import Knowledge from "../components/Knowledge";
 import Newsletter from "../components/Newsletter";
 import Offer from "../components/Offer";
 import OfferTwo from "../components/OfferTwo";
+import GlideCarousel from "../components/GlideCarousel";
 import { useEffect } from "react";
 
 function HomeTwo() {
@@ -22,6 +23,7 @@ function HomeTwo() {
         <Offer className="hidden lg:block" />
         <OfferTwo className="lg:hidden" />
         <Goal />
+        <GlideCarousel />
         <Knowledge />
         <Newsletter />
         <Footer />

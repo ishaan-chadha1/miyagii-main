@@ -83,7 +83,7 @@ function StorageSubscription() {
       <div
         className={`${styles.paddingX} mt-[2rem] md:mt-[5rem] flex flex-wrap justify-center gap-6`}
       >
-        <div className="w-[312px] h-[220px] md:h-[520px] xl:h-[570px] p-6 flex flex-col gap-4 md:gap-6">
+        <div className="w-[250px] h-[220px] md:h-[520px] xl:h-[570px] p-6 flex flex-col gap-4 md:gap-6">
           <h1 className={`${styles.heroHead3Text} uppercase text-black`}>
             pick your plan
           </h1>
@@ -104,7 +104,7 @@ function StorageSubscription() {
                   <div class="drops lgDrop"></div>
                 </div>
               </div>
-              <h2 className="capitalize text-[20px]" >monthly billing</h2>
+              <h2 className="capitalize text-[20px]" >Monthly Billing</h2>
             </label>
             <input type="radio" name="checkbox" class="check" id="radio2" />
             <label for="radio2">
@@ -116,7 +116,7 @@ function StorageSubscription() {
                   <div class="drops lgDrop"></div>
                 </div>
               </div>
-              <h2 className="capitalize text-[20px]" >yearly billing</h2>
+              <h2 className="capitalize text-[20px]" >Yearly Billing</h2>
             </label>
             <input type="radio" name="checkbox" class="check" id="radio2" />
             <label for="radio2">
@@ -128,7 +128,7 @@ function StorageSubscription() {
                   <div class="drops lgDrop"></div>
                 </div>
               </div>
-              <h2 className="capitalize text-[20px]" >yearly billing</h2>
+              <h2 className="capitalize text-[20px]" >Decennial billing</h2>
             </label>
             <input type="radio" name="checkbox" class="check" id="radio2" />
             <label for="radio2">
@@ -136,12 +136,12 @@ function StorageSubscription() {
                 <div class="cRadioBtn">
                 </div>
               </div>
-              <h2 className="capitalize text-[20px]" >yearly billing</h2>
+              <h2 className="capitalize text-[20px]" >Lifetime billing</h2>
             </label>
           </div>
         </div>
         <Tilt>
-        <div className="w-[312px] h-[400px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
+        <div className="w-[250px] h-[400px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
           <div className="flex flex-col gap-4 md:gap-6">
             <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
               base
@@ -180,7 +180,7 @@ function StorageSubscription() {
         </div>
         </Tilt>
         <Tilt>
-        <div className="w-[312px] h-[440px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
+        <div className="w-[250px] h-[440px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
           <div className="flex flex-col gap-4 md:gap-6">
             <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
               plus
@@ -192,8 +192,6 @@ function StorageSubscription() {
               </p>
               <p className=" text-slate-200 text-[0.9rem] md:text-base leading-relaxed">
                 For The Golf Professionals Who Already Have Many Teaching Hours
-                and Who Have a Large Customer Database and For The Small Golf
-                Academies.
               </p>
             </div>
           </div>
@@ -221,7 +219,7 @@ function StorageSubscription() {
         </div>
         </Tilt>
         <Tilt>
-        <div className="w-[312px] h-[400px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
+        <div className="w-[250px] h-[400px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
           <div className="flex flex-col gap-4 md:gap-6">
             <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
               premium

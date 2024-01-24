@@ -5,7 +5,6 @@ import About from '../components/About';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Goal from '../components/Goal';
-
 function HomeOne() {
     return ( 
         <>

@@ -69,11 +69,11 @@ function About() {
             {"<"}
             <span className="text-[#5379FE]">
               Try out Miyagi for free and let us know how you feel about it.
-            </span>{" "}
+            </span>
             Your opinion matters to us. A Long time{" "}
             <br className="hidden md:inline-block" /> ago, someone asked one of
             our founders,
-            <span className="text-[#5379FE]">“What does the user want?’.</span>
+            <span className="text-[#5379FE]">“What does the user want?’.</span> {" />"}
           </div>
           <div className="text-center text-[#807E87] text-[1.1rem] font-normal leading-7 md:leading-7  capitalize">
             That simple yet
