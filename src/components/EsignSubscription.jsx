@@ -81,7 +81,7 @@ function EsignSubscription() {
       </div>
 
       <div className={`${styles.paddingX} mt-[2rem] md:mt-[5rem] flex flex-wrap justify-center gap-6`}>
-          <div className="w-[312px] h-[400px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
+          <div className="w-[270px] h-[400px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
             <div className="flex flex-col gap-4 md:gap-6">
               <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
                 base
@@ -118,7 +118,7 @@ function EsignSubscription() {
               </h3>
             </div>
           </div>
-          <div className="w-[312px] h-[400px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
+          <div className="w-[270px] h-[400px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
             <div className="flex flex-col gap-4 md:gap-6">
               <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
                 base
@@ -155,7 +155,7 @@ function EsignSubscription() {
               </h3>
             </div>
           </div>
-          <div className="w-[312px] h-[450px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
+          <div className="w-[270px] h-[450px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
             <div className="flex flex-col gap-4 md:gap-6">
               <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
                 plus
@@ -191,7 +191,7 @@ function EsignSubscription() {
               </h3>
             </div>
           </div>
-          <div className="w-[312px] h-[400px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
+          <div className="w-[270px] h-[400px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between">
             <div className="flex flex-col gap-4 md:gap-6">
               <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
                 premium

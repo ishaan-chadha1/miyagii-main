@@ -18,7 +18,7 @@ function FeatureCard({ Image, Image1, heading, content, index }) {
     <div key={index} className="activeBox"
      onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
      >
-      <div className="inneractiveBox flex flex-col w-[310px] h-full rounded-3xl shadow border border-slate-200 p-6 gap-3 md:gap-4">
+      <div className="inneractiveBox flex flex-col w-[280px] h-full rounded-3xl shadow border border-slate-200 p-6 gap-3 md:gap-4">
         <div className="featured-image w-[100px] h-[100px] bg-blue-500 rounded-[20px]">
           <img className={`feature-image ${isHovered ? "hidden" : ""}`} src={Image} alt="" />
           <img className={`feature-image1 ${isHovered ? "" : "hidden"}`} src={Image1} alt="" />
