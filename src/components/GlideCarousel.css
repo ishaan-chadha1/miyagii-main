@@ -25,6 +25,7 @@
     opacity: 1; /* Make active slide fully visible */
     box-shadow: 0 4px 8px rgba(0, 123, 255, 0.5); /* Shadow for active slide */
     transition: opacity 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(-10px); 
    }
   
   /* Custom styling for the navigation arrows */
@@ -78,3 +79,136 @@
     background-color: #007BFF; /* Highlight color for the active dot */
     transform: scale(1.5);
   }
+
+
+
+
+
+
+
+
+  /*philosophy carousel*/
+
+  #philosophy-carousel .glide {
+    position: relative;
+    box-sizing: border-box;
+    background: transparent;
+  }
+
+/* Track and Slides */
+#philosophy-carousel .glide__track {
+  overflow: hidden;
+}
+
+#philosophy-carousel .glide__slides {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Single Slide */
+#philosophy-carousel .glide__slide {
+  box-sizing: border-box;
+  padding: 1rem;
+  background: transparent; /* Background of the slide */
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0); /* Soft shadow for depth */
+  margin: 1rem; /* Spacing between slides */
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: 200px; /* Fixed height for each slide */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+/* Active Slide Effect */
+#philosophy-carousel .glide__slide--active {
+  transform: translateY(-10px); /* Lift active slide */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0); /* Stronger shadow for lifted effect */
+}
+
+/* Testimonial Text */
+#philosophy-carousel .glide__slide p {
+  color: #555; /* Text color */
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem; /* Spacing between text and author */
+}
+
+/* Author Details */
+#philosophy-carousel .glide__slide h3 {
+  color: #3078ff; /* Highlight color for author name */
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+/* Arrows for navigation */
+#philosophy-carousel .glide__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3078ff; /* Button background */
+  color: #ffffff; /* Arrow color */
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px; /* Size of the arrow icons */
+  user-select: none;
+  z-index: 2;
+}
+
+#philosophy-carousel .glide__arrow:hover {
+  background-color: #5591ff; /* Hover state color */
+}
+
+#philosophy-carousel .glide__arrow--left {
+  left: 25px;
+}
+
+#philosophy-carousel .glide__arrow--right {
+  right: 25px;
+}
+
+/* Pagination Bullets */
+#philosophy-carousel .glide__bullets {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+#philosophy-carousel .glide__bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc; /* Inactive bullet color */
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+#philosophy-carousel .glide__bullet--active {
+  background-color: #3078ff; /* Active bullet color */
+}
+
+#philosophy-carousel .glide__bullet:hover {
+  background-color: #5591ff; /* Hover state color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #philosophy-carousel .glide__slide {
+    margin: 2rem 0.5rem;
+  }
+
+  #philosophy-carousel .glide__arrow--left {
+    left: 10px;
+  }
+
+  #philosophy-carousel .glide__arrow--right {
+    right: 10px;
+  }
+}

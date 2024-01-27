@@ -2,11 +2,11 @@
 import React, { useEffect } from 'react';
 import Glide from '@glidejs/glide';
 import '@glidejs/glide/dist/css/glide.core.min.css';
-// import './PhilosophyCarousel.css';
+import './GlideCarousel.css';
 
 const PhilosophyCarousel = () => {
   useEffect(() => {
-    const glide = new Glide('#intro', {
+    const glide = new Glide('#philosophy-carousel', {
       type: 'carousel',
       perView: 3,
       focusAt: 'center',
@@ -27,7 +27,7 @@ const PhilosophyCarousel = () => {
   }, []);
 
   return (
-    <div id="intro" className="glide">
+    <div id="philosophy-carousel" className="glide">
       <div className="glide__track" data-glide-el="track">
         <ul className="glide__slides">
           {/* Testimonial Slide 1 */}
