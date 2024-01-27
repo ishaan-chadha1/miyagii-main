@@ -20,7 +20,7 @@ function UploadCard({ subscriptiontype, detail, content, amount, time, index, ac
       key={index}
       className="activeBox"
     >
-    <div className="w-[280px] h-[450px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between transform translate-z-120">
+    <div className="w-[270px] h-[450px] md:h-[520px] xl:h-[570px] bg-blue-500 rounded-3xl p-6 flex flex-col justify-between transform translate-z-120">
           <div className="flex flex-col gap-4 md:gap-6">
             <h1 className={`${styles.heroHead3Text} uppercase text-white`}>
               {subscriptiontype}
