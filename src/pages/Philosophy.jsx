@@ -6,6 +6,7 @@ import Location from "../components/Location";
 import Footer from "../components/Footer";
 import Power from "../components/Power";
 import { useEffect } from "react";
+import PhilosophyCarousel from "../components/PhilosophyCarousel";
 
 function Philosophy() {
     useEffect(()=>{
@@ -15,6 +16,7 @@ function Philosophy() {
     <Header/>
     <Hero/>
     <Power/>
+    <PhilosophyCarousel />
     <About/>
     <Believe/>
     <Location/>
