@@ -1,10 +1,10 @@
 import Contact from "../components/Contact";
 import Header from "../components/Header";
-import StorageSubscription from "../components/StorageSubscription";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
+import EsignSubscription from "../components/EsignSubscription";
 
-function StorageTwo() {
+function EsignPricing() {
   useEffect(()=>{
     window.scrollTo(0, 0);
 },[]);
@@ -12,7 +12,7 @@ function StorageTwo() {
     <>
       <Header />
       <div className="mt-[10rem] md:mt-[0rem]">
-        <StorageSubscription />
+        <EsignSubscription />
         {/* <div className="w-full flex justify-center">
           <NavLink to="/subscription">
             <button className="p-2 rounded-lg text-white bg-[#5379FE] text-[15px] font-thin">
@@ -26,4 +26,4 @@ function StorageTwo() {
   );
 }
 
-export default StorageTwo;
+export default EsignPricing;

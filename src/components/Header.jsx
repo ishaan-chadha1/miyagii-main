@@ -185,7 +185,7 @@ const Header = () => {
                     <span>Storage</span>
                   </motion.div>
                 </NavLink>
-                <NavLink to="/subscription">
+                <NavLink to="/verification-pricing">
                   <motion.div
                     initial={{
                       opacity: 0,
@@ -201,7 +201,7 @@ const Header = () => {
                     <span>Verification</span>
                   </motion.div>
                 </NavLink>
-                <NavLink to="/subscription">
+                <NavLink to="/esign-pricing">
                   <motion.div
                     initial={{
                       opacity: 0,
