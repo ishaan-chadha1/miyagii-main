@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power1 } from "gsap";
 import { useEffect } from "react";
+import EsignCard from "./EsignCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,7 +41,7 @@ function SubscriptionBanner() {
 
   return (
     <section
-      className={`trigger0 relative w-full min-h-[45vh] lg:pt-[270px] pb-[100px] md:pt-[270px] md:pb-[270px] md:min-h-[100vh] mx-auto `}
+      className={`trigger0 relative w-full min-h-[45vh] lg:pt-[270px] pb-[100px] md:pt-[100px] md:pb-[100px] md:min-h-[100vh] mx-auto `}
     >
       <motion.img
         className="box box1 absolute top-[5vh] left-[0px] xl:top-[10vh] hidden md:inline-block xl:left-[0px] rotate-[-40.33]"
@@ -77,6 +78,7 @@ function SubscriptionBanner() {
           </div>
         </div>
       </div>
+      <EsignCard />
     </section>
   );
 }

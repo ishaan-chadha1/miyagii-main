@@ -53,7 +53,7 @@ function Newsletter() {
         
         }}
         transition={{ duration: 1, delay:0.5 }}>
-          <h1 className="text-slate-950 text-[1.5rem] xl:text-[2.3rem] font-normal leading-[34px] uppercase mb-8">
+          <h1 className="text-slate-950 text-[1.5rem] xl:text-[1.5rem] font-normal leading-[34px] uppercase mb-8">
             Decentralise. Simplify. Digitilise.
           </h1>
           <p className="text-zinc-500 text-[1rem] xl:text-[1.2rem] font-normal leading-[30px] text-center">

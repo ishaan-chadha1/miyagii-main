@@ -66,10 +66,10 @@ const PhilosophyCarousel = () => {
           {/* Add more slides as needed */}
         </ul>
       </div>
-      <div className="glide__arrows" data-glide-el="controls">
+      {/* <div className="glide__arrows" data-glide-el="controls">
         <button className="glide__arrow glide__arrow--left" data-glide-dir="<">{"<"}</button>
         <button className="glide__arrow glide__arrow--right" data-glide-dir=">">{">"}</button>
-      </div>
+      </div> */}
       
       {/* Pagination Bullets */}
       <div className="glide__bullets" data-glide-el="controls[nav]">

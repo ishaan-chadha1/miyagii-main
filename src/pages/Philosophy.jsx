@@ -16,7 +16,6 @@ function Philosophy() {
     <Header/>
     <Hero/>
     <Power/>
-    <PhilosophyCarousel />
     <About/>
     <Believe/>
     <Location/>

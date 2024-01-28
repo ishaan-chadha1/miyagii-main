@@ -2,6 +2,7 @@ import { styles } from "../styles";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { box1, box2, box3, box4 } from "../assets";
+import PhilosophyCarousel from "./PhilosophyCarousel";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power1 } from "gsap";
@@ -28,11 +29,8 @@ function About() {
         </h1>
       </div>
 
-      <div className="bg-[white] p-2 mx-auto rounded-lg flex flex-row justify-evenly w-[300px] text-center">
-        <h1 className="p-2 text-[15px] font-thin">Lorem</h1>
-        <h1 className="p-2 text-[15px] font-thin">Lorem</h1>
-        <h1 className="p-2 text-[15px] font-thin">Lorem</h1>
-      </div>
+    
+      <PhilosophyCarousel />
 
       {inView && (
         <div
