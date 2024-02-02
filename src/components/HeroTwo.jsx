@@ -118,13 +118,13 @@ gsap.to(".box4",{
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}>
-            Verify Now
+            Verify 
           </motion.button>
           <motion.button className=" min-w-[160px] min-h-[50px] font-poppins font-medium cursor-pointer text-[16px] rounded-3xl border-2 p-2 text-black bg-white "
                  whileHover={{ scale: 1.2 }}
                  whileTap={{ scale: 0.9 }}
                  transition={{ type: "spring", stiffness: 400, damping: 17 }}>
-            Decentralize Now
+            Decentralize 
           </motion.button>
           </div>
         </div>
