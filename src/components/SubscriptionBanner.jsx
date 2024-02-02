@@ -74,7 +74,6 @@ function SubscriptionBanner() {
           Why should you upload to the chain?
           </div>
           <div className="text-center text-[#807E87] text-[1.1rem] font-normal leading-7 md:leading-7 ">
-          Uploading your data on the chain opens up avenues for your data <br/> to become : (followed by the 4 prompts)
           </div>
         </div>
       </div>

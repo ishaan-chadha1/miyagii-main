@@ -66,7 +66,7 @@ function Newsletter() {
       </div>
       <div className={`mt-[5rem] xl:mt-[10rem] max-w-7xl mx-auto ${styles.paddingX} `}>
       <div className="bg-gradient-to-r from-[#E0F5FF] to-[#D4EEFF] p-6 rounded-lg shadow-md max-w-2xl mx-auto my-8 transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 hover:shadow-xl">
-      <h2 className="text-2xl font-bold text-center text-[#5379FE] mb-4 animate-pulse">Join our Newsletter</h2>
+      <h2 className="text-2xl font-bold text-center text-[#5379FE] mb-4 animate">Join our Newsletter</h2>
       <form className="flex flex-col sm:flex-row gap-4 justify-between">
         <input
           className="flex-1 px-4 py-2 text-[#5379FE] bg-[#ffffff] border border-[#5379FE] rounded-md shadow-sm focus:outline-none focus:border-[#5379FE] focus:ring-1 focus:ring-[#5379FE] transition-colors duration-500"
