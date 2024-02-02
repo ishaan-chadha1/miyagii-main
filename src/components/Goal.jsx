@@ -105,11 +105,11 @@ function Goal() {
         <h2
           className={`${styles.heroHead1Text}  text-white uppercase text-center`}
         >
-          <span className="text-black ">
+          {/* <span className="text-black ">
             Our goal at Miyagi is to make your interactions with this innovative
             technology as humane as possible while providing you with endless
             inspiration for your creative journey.
-          </span>
+          </span> */}
         </h2>
       </motion.div>
            )}
