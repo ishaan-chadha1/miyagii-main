@@ -8,7 +8,7 @@ import { ResponsiveBar } from "@nivo/bar"
 export default function Comparison() {
   return (
     <div key="1" className="bg-[#F3F4F6] p-4 rounded-lg max-w-3xl mx-auto shadow-lg border border-gray-200">
-      <div className="text-gray-900 font-semibold mb-4 text-xl">GPU Pricing Comparison</div>
+      <div className="text-gray-900 font-semibold mb-4 text-xl">Our Pricing Vs. Our Competitors</div>
       <div className="grid grid-cols-5 gap-2 text-gray-900 mb-4">
         <div className="col-span-1" />
         <div className="flex justify-center items-center">
