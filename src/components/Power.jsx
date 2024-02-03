@@ -67,9 +67,16 @@ function Power() {
 
   return (
     <section
-      className={`trigger1 power w-full relative min-h-[80vh] md:min-h-[90vh] mx-auto`}
+      className={`trigger1 power w-full relative min-h-[80vh] md:min-h-[90vh] mx-auto pt-[120px]`}
       ref={ref}
     >
+      <div>
+          <h2
+            className={`${styles.heroHeadText}  text-white uppercase text-center`}
+          >
+            <span className="text-black">Unlock The Power of Blockchain</span>
+          </h2>
+        </div>
       <motion.img
         className="box box7 absolute top-[80vh] right-[10vw] xl:top-[75vh] xl:right-[20vw] rotate-[-40.33] hidden md:inline-block"
         src={box13}

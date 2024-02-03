@@ -9,6 +9,7 @@ import Offer from "../components/Offer";
 import OfferTwo from "../components/OfferTwo";
 import GlideCarousel from "../components/GlideCarousel";
 import { useEffect } from "react";
+import Power from "../components/Power";
 
 function HomeTwo() {
   useEffect(()=>{
@@ -19,12 +20,14 @@ function HomeTwo() {
       <div>
         <Header />
         <HeroTwo />
-        <AboutTwo />
+
+        <Power />
         <Offer className="hidden lg:block" />
         <OfferTwo className="lg:hidden" />
         <Goal />
         <GlideCarousel />
         <Knowledge />
+        <AboutTwo />
         <Newsletter />
         <Footer />
       </div>

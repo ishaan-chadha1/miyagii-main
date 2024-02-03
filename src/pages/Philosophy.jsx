@@ -15,7 +15,7 @@ function Philosophy() {
     return ( <>
     <Header/>
     <Hero/>
-    <Power/>
+    {/* <Power/> */}
     <About/>
     <Believe/>
     <Location/>

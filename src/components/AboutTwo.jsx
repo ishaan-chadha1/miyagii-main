@@ -70,13 +70,7 @@ function AboutTwo() {
       <div
         className={`mt-[100px] max-w-7xl mx-auto ${styles.paddingX} items-start`}
       >
-        <div>
-          <h2
-            className={`${styles.heroHeadText}  text-white uppercase text-center`}
-          >
-            <span className="text-black">Unlock The Power of Blockchain</span>
-          </h2>
-        </div>
+        
 
         <div className=" flex flex-col justify-between mt-4 md:mt-[4rem] lg:flex-row items-center">
           <div className="image1  md:w-[50%] h-[20rem] md:h-[35vh] lg:h-[50vh] xl:w-[35rem] ">
