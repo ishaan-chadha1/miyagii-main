@@ -5,7 +5,9 @@ import Believe from "../components/Believe";
 import Location from "../components/Location";
 import Footer from "../components/Footer";
 import Power from "../components/Power";
+import Graph from "../components/Graph";
 import { useEffect } from "react";
+import Comparison from "../components/Comparison";
 import PhilosophyCarousel from "../components/PhilosophyCarousel";
 
 function Philosophy() {
@@ -17,7 +19,10 @@ function Philosophy() {
     <Hero/>
     {/* <Power/> */}
     <About/>
+    <Graph />
+ 
     <Believe/>
+    <Comparison />
     <Location/>
     <Footer/>
     </> );
