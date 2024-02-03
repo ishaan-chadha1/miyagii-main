@@ -7,45 +7,45 @@ import { ResponsiveBar } from "@nivo/bar"
 
 export default function Comparison() {
   return (
-    <div key="1" className="bg-[#F3F4F6] p-8 rounded-lg max-w-4xl mx-auto shadow-lg border border-gray-200">
-      <div className="text-gray-900 font-semibold mb-6 text-3xl text-center">Our Price vs. Our Competition</div>
-      <div className="grid grid-cols-5 gap-4 text-gray-900 mb-6">
+    <div key="1" className="bg-[#F3F4F6] p-4 rounded-lg max-w-3xl mx-auto shadow-lg border border-gray-200">
+      <div className="text-gray-900 font-semibold mb-4 text-xl">GPU Pricing Comparison</div>
+      <div className="grid grid-cols-5 gap-2 text-gray-900 mb-4">
         <div className="col-span-1" />
         <div className="flex justify-center items-center">
-          <CloudIcon className="h-10 w-10" />
+          <CloudIcon className="h-6 w-6" />
         </div>
         <div className="flex justify-center items-center">
-          <CloudIcon className="h-10 w-10" />
+          <CloudIcon className="h-6 w-6" />
         </div>
         <div className="flex justify-center items-center">
-          <CloudIcon className="h-10 w-10" />
+          <CloudIcon className="h-6 w-6" />
         </div>
         <div className="flex justify-center items-center">
-          <SplineIcon className="h-10 w-10" />
+          <SplineIcon className="h-6 w-6" />
         </div>
       </div>
-      <div className="grid grid-cols-5 gap-4 text-gray-900 mb-6 bg-gray-200 p-2 rounded-md">
-        <div className="col-span-1 font-medium">A100 / 80 GB</div>
-        <div className="flex justify-center">$5.12/hr</div>
-        <div className="flex justify-center">$5.07/hr</div>
-        <div className="flex justify-center">$3.67/hr</div>
-        <div className="flex justify-center bg-[#2563EB] rounded-md text-white">$1.38/hr</div>
+      <div className="grid grid-cols-5 gap-2 text-gray-900 mb-4">
+        <div className="col-span-1 font-medium text-sm">A100 / 80 GB</div>
+        <div className="flex justify-center text-sm">$5.12/hr</div>
+        <div className="flex justify-center text-sm">$5.07/hr</div>
+        <div className="flex justify-center text-sm">$3.67/hr</div>
+        <div className="flex justify-center bg-[#2563EB] rounded-md text-white text-sm">$1.38/hr</div>
       </div>
-      <div className="grid grid-cols-5 gap-4 text-gray-900 mb-6 bg-gray-200 p-2 rounded-md">
-        <div className="col-span-1 font-medium">A100 / 40 GB</div>
-        <div className="flex justify-center">$4.10/hr</div>
-        <div className="flex justify-center">$3.67/hr</div>
-        <div className="flex justify-center">$3.40/hr</div>
-        <div className="flex justify-center bg-[#2563EB] rounded-md text-white">$0.69/hr</div>
+      <div className="grid grid-cols-5 gap-2 text-gray-900 mb-4">
+        <div className="col-span-1 font-medium text-sm">A100 / 40 GB</div>
+        <div className="flex justify-center text-sm">$4.10/hr</div>
+        <div className="flex justify-center text-sm">$3.67/hr</div>
+        <div className="flex justify-center text-sm">$3.40/hr</div>
+        <div className="flex justify-center bg-[#2563EB] rounded-md text-white text-sm">$0.69/hr</div>
       </div>
-      <div className="grid grid-cols-5 gap-4 text-gray-900 mb-6 bg-gray-200 p-2 rounded-md">
-        <div className="col-span-1 font-medium">V100 / 16 GB</div>
-        <div className="flex justify-center">$3.06/hr</div>
-        <div className="flex justify-center">$2.95/hr</div>
-        <div className="flex justify-center">$3.06/hr</div>
-        <div className="flex justify-center bg-[#2563EB] rounded-md text-white">$0.14/hr</div>
+      <div className="grid grid-cols-5 gap-2 text-gray-900 mb-4">
+        <div className="col-span-1 font-medium text-sm">V100 / 16 GB</div>
+        <div className="flex justify-center text-sm">$3.06/hr</div>
+        <div className="flex justify-center text-sm">$2.95/hr</div>
+        <div className="flex justify-center text-sm">$3.06/hr</div>
+        <div className="flex justify-center bg-[#2563EB] rounded-md text-white text-sm">$0.14/hr</div>
       </div>
-      <BarChart className="w-full h-[300px]" />
+      <BarChart className="w-full h-[200px]" />
     </div>
   )
 }
