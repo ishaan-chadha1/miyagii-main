@@ -115,9 +115,9 @@ function Offer() {
           className={`${styles.heroHeadText}  text-white uppercase text-center`}
         >
           <span className="text-black">
-            What does have to {"<"}
+            What does {"<"}
             <span className="text-[#5379FE]">MIYAGI</span>
-            {">"} offer?
+            {">"} have to  offer?
           </span>
         </h1>
       </div>
