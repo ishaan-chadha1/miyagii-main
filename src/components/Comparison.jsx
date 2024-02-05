@@ -1,12 +1,16 @@
-
-import { ResponsiveBar } from "@nivo/bar"
+import { ResponsiveBar } from "@nivo/bar";
 
 export default function Comparison() {
   return (
-    <div key="1" className="bg-[#F3F4F6] p-4 rounded-lg max-w-3xl mx-auto shadow-lg border border-gray-200">
-      <div className="text-gray-900 font-semibold mb-4 text-xl">{"<"}
-                      <span className="text-[#5379FE]">MIYAGI</span>
-                      {">"}'s Pricing Vs. Our Competitors</div>
+    <div
+      key="1"
+      className="bg-transparent p-4 rounded-lg max-w-3xl mx-auto shadow-lg border border-gray-200"
+    >
+      <div className="text-gray-900 font-semibold mb-4 text-xl">
+        {"<"}
+        <span className="text-[#5379FE]">MIYAGI</span>
+        {">"}'s Pricing Vs. Our Competitors
+      </div>
       <div className="grid grid-cols-5 gap-2 text-gray-900 mb-4">
         <div className="col-span-1" />
         <div className="flex justify-center items-center">
@@ -27,25 +31,31 @@ export default function Comparison() {
         <div className="flex justify-center text-sm">$5.12/hr</div>
         <div className="flex justify-center text-sm">$5.07/hr</div>
         <div className="flex justify-center text-sm">$3.67/hr</div>
-        <div className="flex justify-center bg-[#2563EB] rounded-md text-white text-sm">$1.38/hr</div>
+        <div className="flex justify-center bg-[#2563EB] rounded-md text-white text-sm">
+          $1.38/hr
+        </div>
       </div>
       <div className="grid grid-cols-5 gap-2 text-gray-900 mb-4">
         <div className="col-span-1 font-medium text-sm">A100 / 40 GB</div>
         <div className="flex justify-center text-sm">$4.10/hr</div>
         <div className="flex justify-center text-sm">$3.67/hr</div>
         <div className="flex justify-center text-sm">$3.40/hr</div>
-        <div className="flex justify-center bg-[#2563EB] rounded-md text-white text-sm">$0.69/hr</div>
+        <div className="flex justify-center bg-[#2563EB] rounded-md text-white text-sm">
+          $0.69/hr
+        </div>
       </div>
       <div className="grid grid-cols-5 gap-2 text-gray-900 mb-4">
         <div className="col-span-1 font-medium text-sm">V100 / 16 GB</div>
         <div className="flex justify-center text-sm">$3.06/hr</div>
         <div className="flex justify-center text-sm">$2.95/hr</div>
         <div className="flex justify-center text-sm">$3.06/hr</div>
-        <div className="flex justify-center bg-[#2563EB] rounded-md text-white text-sm">$0.14/hr</div>
+        <div className="flex justify-center bg-[#2563EB] rounded-md text-white text-sm">
+          $0.14/hr
+        </div>
       </div>
       <BarChart className="w-full h-[200px]" />
     </div>
-  )
+  );
 }
 
 function BarChart(props) {
@@ -98,9 +108,8 @@ function BarChart(props) {
         ariaLabel="A bar chart showing data"
       />
     </div>
-  )
+  );
 }
-
 
 function CloudIcon(props) {
   return (
@@ -118,9 +127,8 @@ function CloudIcon(props) {
     >
       <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
     </svg>
-  )
+  );
 }
-
 
 function SplineIcon(props) {
   return (
@@ -140,5 +148,5 @@ function SplineIcon(props) {
       <circle cx="5" cy="19" r="2" />
       <path d="M5 17A12 12 0 0 1 17 5" />
     </svg>
-  )
+  );
 }
