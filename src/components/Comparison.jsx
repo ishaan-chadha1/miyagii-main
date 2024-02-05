@@ -31,7 +31,7 @@ export default function Comparison() {
         <div className="flex justify-center text-sm">$5.12/hr</div>
         <div className="flex justify-center text-sm">$5.07/hr</div>
         <div className="flex justify-center text-sm">$3.67/hr</div>
-        <div className="flex justify-center bg-[#2563EB] rounded-md text-white text-sm">
+        <div className="flex justify-center bg-[#5379FE] rounded-md text-white text-sm">
           $1.38/hr
         </div>
       </div>
@@ -40,7 +40,7 @@ export default function Comparison() {
         <div className="flex justify-center text-sm">$4.10/hr</div>
         <div className="flex justify-center text-sm">$3.67/hr</div>
         <div className="flex justify-center text-sm">$3.40/hr</div>
-        <div className="flex justify-center bg-[#2563EB] rounded-md text-white text-sm">
+        <div className="flex justify-center bg-[#5379FE] rounded-md text-white text-sm">
           $0.69/hr
         </div>
       </div>
@@ -49,11 +49,11 @@ export default function Comparison() {
         <div className="flex justify-center text-sm">$3.06/hr</div>
         <div className="flex justify-center text-sm">$2.95/hr</div>
         <div className="flex justify-center text-sm">$3.06/hr</div>
-        <div className="flex justify-center bg-[#2563EB] rounded-md text-white text-sm">
+        <div className="flex justify-center bg-[#5379FE] rounded-md text-white text-sm">
           $0.14/hr
         </div>
       </div>
-      <BarChart className="w-full h-[200px]" />
+      <BarChart className="w-full pt-10 h-[250px]" />
     </div>
   );
 }
@@ -74,7 +74,7 @@ function BarChart(props) {
         indexBy="name"
         margin={{ top: 0, right: 0, bottom: 40, left: 40 }}
         padding={0.3}
-        colors={["#2563eb"]}
+        colors={["#5379FE"]}
         axisBottom={{
           tickSize: 0,
           tickPadding: 16,
@@ -98,7 +98,7 @@ function BarChart(props) {
           },
           grid: {
             line: {
-              stroke: "#f3f4f6",
+              stroke: "#5379FE",
             },
           },
         }}

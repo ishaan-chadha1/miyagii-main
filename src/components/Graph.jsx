@@ -41,7 +41,7 @@ export default function Graph() {
                       scope="col"
                     >
                       {"<"}
-                      <span className="text-[#5379FE]">MIYAGI</span>
+                      <span className="text-[#5379fe]">MIYAGI</span>
                       {">"} Digital Document
                     </th>
                   </tr>
@@ -53,8 +53,8 @@ export default function Graph() {
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       <div className="flex space-x-1">
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
                         <SquareIcon className="text-gray-300" />
                         <SquareIcon className="text-gray-300" />
                         <SquareIcon className="text-gray-300" />
@@ -62,20 +62,20 @@ export default function Graph() {
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       <div className="flex space-x-1">
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
                         <SquareIcon className="text-gray-300" />
                         <SquareIcon className="text-gray-300" />
                       </div>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       <div className="flex space-x-1">
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
                       </div>
                     </td>
                   </tr>
@@ -85,7 +85,7 @@ export default function Graph() {
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       <div className="flex space-x-1">
-                        <SquareIcon className="text-purple-600" />
+                        <SquareIcon className="text-[#5379fe]" />
                         <SquareIcon className="text-gray-300" />
                         <SquareIcon className="text-gray-300" />
                         <SquareIcon className="text-gray-300" />
@@ -94,20 +94,20 @@ export default function Graph() {
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       <div className="flex space-x-1">
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
                         <SquareIcon className="text-gray-300" />
                       </div>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       <div className="flex space-x-1">
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
                       </div>
                     </td>
                   </tr>
@@ -117,7 +117,7 @@ export default function Graph() {
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       <div className="flex space-x-1">
-                        <SquareIcon className="text-purple-600" />
+                        <SquareIcon className="text-[#5379fe]" />
                         <SquareIcon className="text-gray-300" />
                         <SquareIcon className="text-gray-300" />
                         <SquareIcon className="text-gray-300" />
@@ -126,20 +126,20 @@ export default function Graph() {
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       <div className="flex space-x-1">
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
                         <SquareIcon className="text-gray-300" />
                         <SquareIcon className="text-gray-300" />
                       </div>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       <div className="flex space-x-1">
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
-                        <SquareIcon className="text-purple-600" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
                       </div>
                     </td>
                   </tr>
