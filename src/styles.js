@@ -13,6 +13,8 @@ const styles = {
     "font-black font-normal text-white text-[1.3rem] xl:text-[24px] sm:text-[28px] lg:text-[24px]  xl:leading-[45px] lg:leading-[55px] mt-2",
     heroHead3Text:
     "font-black font-normal  text-[1.3rem] xl:text-[30px] sm:text-[28px] lg:text-[24px]  xl:leading-[40px] lg:leading-[45px] mt-2",
+    heroHead4Text:
+    "font-black font-normal  text-[1.3rem] xl:text-[23px] sm:text-[28px] lg:text-[24px]  xl:leading-[40px] lg:leading-[45px] mt-2",
   heroSubText:
     "text-[1.1rem] lg:text-[25px] sm:text-[26px] xs:text-[20px] lg:leading-[35px]",
 
