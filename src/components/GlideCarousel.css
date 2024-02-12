@@ -1,6 +1,7 @@
 .glide {
     overflow: visible;
     position: relative;
+    padding-top: 15rem;
   }
   
   .glide__slide {

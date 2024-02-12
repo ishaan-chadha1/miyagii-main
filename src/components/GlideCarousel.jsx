@@ -33,7 +33,7 @@ const GlideCarousel = () => {
   return (
     <div id="intro" className="glide">
       <div className="glide__track" data-glide-el="track">
-        <ul className="glide__slides pt-20">
+        <ul className="glide__slides">
           {/* Map through your slides data if available or hardcode slide items */}
           {[...Array(5)].map((_, index) => (
             <li
