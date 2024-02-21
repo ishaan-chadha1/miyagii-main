@@ -10,7 +10,7 @@ const styles = {
   heroHead2Text:
   "font-black font-normal text-white text-[1.5rem] lg:text-[60px] sm:text-[30px] xs:text-[28px]  lg:leading-[78px] mt-2",
   heroHead1Text:
-    "font-black font-normal text-white text-[1.3rem] xl:text-[24px] sm:text-[28px] lg:text-[24px]  xl:leading-[45px] lg:leading-[55px] mt-2",
+    "font-black font-normal text-white text-[1.3rem] xl:text-[20px] sm:text-[28px] lg:text-[24px]  xl:leading-[45px] lg:leading-[55px] mt-2",
     heroHead3Text:
     "font-black font-normal  text-[1.3rem] xl:text-[30px] sm:text-[28px] lg:text-[24px]  xl:leading-[40px] lg:leading-[45px] mt-2",
     heroHead4Text:

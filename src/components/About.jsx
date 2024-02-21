@@ -3,6 +3,8 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { box1, box2, box3, box4 } from "../assets";
 import PhilosophyCarousel from "./PhilosophyCarousel";
+
+import GlideCarousel from "../components/GlideCarousel";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power1 } from "gsap";
@@ -23,14 +25,14 @@ function About() {
       className={`about w-full min-h-[70vh] pt-[10vh] pb-[10vh] flex flex-col gap-[3rem] relative mx-auto `}
       ref={ref}
     >
-      <div className={` mx-auto ${styles.paddingX}`}>
+      {/* <div className={` mx-auto ${styles.paddingX}`}>
         <h1 className={`${styles.heroHead2Text}  text-white text-center`}>
           <span className="text-black">why miyagi ?</span>
         </h1>
-      </div>
+      </div> */}
 
     
-      <PhilosophyCarousel />
+      <GlideCarousel />
 
       {inView && (
         <div
@@ -47,10 +49,13 @@ function About() {
             className={`${styles.heroHead3Text}  text-white uppercase text-center`}
           >
             <span className="text-black ">
-              That is a lot to make work and it does get stressful for the team
-              but{" "}
+            
               <span className="text-[#5379FE]">
-                who doesn’t like a challenge?
+              "Miyagi does not keep a trace of your data. Your
+assets are securely stored decentrally making it
+immune to exploitation. We forgo the notion of
+negativity in relation to data privacy and give you the
+reins to your assets."
               </span>
             </span>
           </h2>

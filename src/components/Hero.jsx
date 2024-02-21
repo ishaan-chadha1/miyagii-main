@@ -96,7 +96,7 @@ function Hero() {
             className={`${styles.heroHead2Text}  text-white uppercase text-center`}
           >
             <span className="text-black">
-              {"<"}Our <span className="text-[#5379FE]">PHILOSOPHY</span>
+              {"<"}Why <span className="text-[#5379FE]">MIYAGI</span>
               {">"}
             </span>
           </h1>
@@ -108,16 +108,9 @@ function Hero() {
       >
         <div className=" mx-auto flex flex-col gap-[2rem]">
           <div className={`text-center ${styles.heroSubText}`}>
-            {"<"}If we had to explain to{" "}
-            <span className="text-[#5379FE]">Miyagi</span> in the simplest of
-            terms, We are a <br className="hidden lg:inline-block"/> company which gives right to data ownership to the
-            client{">"}
-          </div>
-          <div className="text-center text-[#807E87] text-[1.1rem] font-normal leading-7 md:leading-7 ">
-          <span className="text-[#5379FE]">In an era</span> where people’s data is being exploited by big tech giants
-            for their ulterior motives,we want to equip people with a tool which
-          <span className="text-[#5379FE]"> would give them an option to not let their data be exploited</span> by the
-            big tech companies or perhaps how <span className="text-[#5379FE]">John Lennon</span> would’ve said it.
+          Unlike data storage providers who blatantly harvest
+your data “Legally” by barricading access to their
+application unless you accept sabotaging T&C’s
           </div>
         </div>
       </div>
