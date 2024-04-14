@@ -1,10 +1,20 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Glide from "@glidejs/glide";
 import "@glidejs/glide/dist/css/glide.core.min.css";
 import "./GlideCarousel.css";
 
+const slideData = [
+  { title: 'Finally', description: 'Slide Description 1' },
+  { title: 'Getting', description: 'Slide Description 2' },
+  { title: 'The Data ', description: 'Slide Description 3' },
+  { title: 'To Display', description: 'Slide Description 4' },
+  { title: 'Dynamically', description: 'Slide Description 5' },
+  // ... add more slides as needed
+];
+
 const GlideCarousel = () => {
   const glideRef = useRef(null);
+  const [slides, setSlides] = useState(slideData); // Initialize state with your slides data
 
   useEffect(() => {
     glideRef.current = new Glide("#intro", {
@@ -34,18 +44,15 @@ const GlideCarousel = () => {
     <div id="intro" className="glide">
       <div className="glide__track" data-glide-el="track">
         <ul className="glide__slides">
-          {/* Map through your slides data if available or hardcode slide items */}
-          {[...Array(5)].map((_, index) => (
+          {slides.map((slide, index) => (
             <li
               key={index}
               className="glide__slide flex items-center justify-center p-6"
-              onClick={() => handleSlideClick(index)} // Adding click handler here
+              onClick={() => handleSlideClick(index)}
             >
               <div className="text-center space-y-4">
-                {/* Slide content */}
-                {/* Replace the content below with your actual slide content */}
-                <h1 className="text-[#5379FE] text-2xl font-bold">Slide Title {index + 1}</h1>
-                <p className="text-[#807E87] text-base">SlideS Description {index + 1}</p>
+                <h1 className="text-[#5379FE] text-2xl font-bold">{slide.title}</h1>
+                <p className="text-[#807E87] text-base">{slide.description}</p>
               </div>
             </li>
           ))}
