@@ -111,7 +111,7 @@ function Believe() {
           transition={{ duration: 1, delay:0.5 }}
         >
           <h2
-            className={`${styles.heroHead1Text}  text-white uppercase text-center`}
+           className="text-[1.9rem] text-white uppercase text-center"
           >
             <span className="text-black ">
               If you believe in <span className="text-[#5379FE]"> Data ownership, Tech craftsmanship</span> and <br className="hidden lg:inline-block"/> <span className="text-[#5379FE">Bringing
@@ -120,16 +120,16 @@ function Believe() {
           </h2>
 
           <h2
-            className={`${styles.heroHead1Text}  text-white uppercase text-center`}
+            className="text-[1.7rem] text-white uppercase text-center"
           >
-            <span className="text-black ">
+            <span className="text-black  text-[2.0rem]">
               We hope that with your help, <span className="text-[#5379FE]">Miyagi</span> can propel the <br className="hidden lg:inline-block"/> world towards a
               future where the issues relating to<br className="hidden lg:inline-block"/> data ownership are no longer a
               concern.
             </span>
           </h2>
           <h2
-            className={`${styles.heroHead1Text}  text-white uppercase text-center`}
+           className="text-[1.7rem] text-white uppercase text-center"
           >
             <span className="text-black ">
              <span className="text-[#5379FE]">Together</span> , we shall make a <span className="text-[#5379FE]">difference</span>. 
