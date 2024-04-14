@@ -2,6 +2,8 @@ import { styles } from "../styles";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 import { featurecardthree } from "..";
+import Tilt from 'react-parallax-tilt';
+
 
 function FeatureCard({ Image, Image1, heading, content, index }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -15,6 +17,7 @@ function FeatureCard({ Image, Image1, heading, content, index }) {
   };
 
   return (
+    <Tilt>
     <div key={index} className="activeBox"
      onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
      >
@@ -35,6 +38,7 @@ function FeatureCard({ Image, Image1, heading, content, index }) {
         </div>
       </div>
     </div>
+  </Tilt>
   );
 }
 
