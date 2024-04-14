@@ -2,6 +2,7 @@ import { styles } from "../styles";
 import { useInView } from "react-intersection-observer";
 import { NavLink } from "react-router-dom";
 import gsap from "gsap";
+import Tilt from 'react-parallax-tilt';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useState } from "react";
 import { featurecardtwo } from "..";
@@ -20,6 +21,7 @@ function FeatureCardTwo({ Image, heading, content, index, Image1 }) {
   };
 
   return (
+    <Tilt>
     <div
       key={index}
       className="activeBox"
@@ -39,6 +41,7 @@ function FeatureCardTwo({ Image, heading, content, index, Image1 }) {
             alt=""
           />
         </div>
+        
         <div>
           <h1 className=" text-[20px] md:text-[25px] font-normal uppercase">
             {heading}
@@ -51,6 +54,7 @@ function FeatureCardTwo({ Image, heading, content, index, Image1 }) {
         </div>
       </div>
     </div>
+    </Tilt>
   );
 }
 
