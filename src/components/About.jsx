@@ -32,7 +32,7 @@ function About() {
       </div> */}
 
     
-      <GlideCarousel />
+      <PhilosophyCarousel />
 
       {inView && (
         <div
