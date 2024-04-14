@@ -45,7 +45,7 @@ const GlideCarousel = () => {
                 {/* Slide content */}
                 {/* Replace the content below with your actual slide content */}
                 <h1 className="text-[#5379FE] text-2xl font-bold">Slide Title {index + 1}</h1>
-                <p className="text-[#807E87] text-base">Slide Description {index + 1}</p>
+                <p className="text-[#807E87] text-base">SlideS Description {index + 1}</p>
               </div>
             </li>
           ))}
