@@ -117,11 +117,11 @@ function Power() {
 
         <div className="pb-[50px] xl:mr-[0rem] lg:pt-[50px] lg:pb-[50px] xl:pt-[120px] xl:pb-[120px] w-full lg:w-[55%] flex flex-col justify-between lg:flex-row items-center">
           <div className="w-[85%] md:p-6 text-center md:text-left">
-            <h1 className="w-full text-[1.7rem] uppercase font-normal">
+            <h1 className="w-full text-[2.0rem] uppercase font-normal">
               “POWER TO THE PEOPLE”
             </h1>
             <div className="flex flex-col gap-10">
-              <p className="w-full text-[#807E87] text-[1rem] capitalize font-normal mt-4 leading-7 tracking-wide">
+              <p className="w-full text-[#807E87] text-[1.3rem] capitalize font-normal mt-4 leading-7 tracking-wide">
                 {"<"}Whether it be having an easy-to-use{" "}
                 <span className="text-[#5379FE]">Verification</span> and
                 <span className="text-[#5379FE]">
@@ -133,7 +133,7 @@ function Power() {
                 we do it all and this is but the{" "}
                 <span className="text-[#5379FE]">tip of ice berg</span> {">"}
               </p>
-              <p className="w-full text-[#807E87] text-[1rem] capitalize font-normal leading-7 tracking-wide">
+              <p className="w-full text-[#807E87] text-[1.2rem] capitalize font-normal leading-7 tracking-wide">
                 Just like <span className="text-[#5379FE]">Satoshi</span>{" "}
                 envisioned Bitcoin taking over financial institutions by
                 dreaming of a world which is{" "}

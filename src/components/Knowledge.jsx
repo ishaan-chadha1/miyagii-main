@@ -105,7 +105,8 @@ function Knowledge() {
         transition={{ duration: 1, delay:0.5 }}
       >
         <h1
-          className={`${styles.heroHead1Text} quote  text-white uppercase text-center`}
+          className= 
+          "text-[1.7rem] text-white uppercase text-center"
         >
           <span className="text-black  ">
           With the knowledge that your digital belongings will be preserved forever and are easily verifiable on the chain, you can enjoy a stress-free seamless interaction with our timeless technology.
