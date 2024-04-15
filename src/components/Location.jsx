@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 function Location() {
   return (
-    <section className="location w-full relative pt-[10vh] pb-[10vh] md:pt-[20vh] md:pb-[20vh] lg:pt-[30vh] lg:pb-[30vh] min-h-[40vh] lg:min-h-[60vh] mx-auto overflow-hidden ">
+    <section className="location w-full relative pt-[10vh] pb-[10vh] md:pt-[20vh] md:pb-[20vh] lg:pt-[30vh] lg:pb-[20vh] min-h-[40vh] lg:min-h-[60vh] mx-auto overflow-hidden ">
       <motion.img
         className="box20 absolute top-[-5vh] left-[0px] xl:top-[0vh] xl:left-[0px] rotate-[-40.33] "
         animate={{
@@ -35,7 +35,7 @@ function Location() {
       <div
         className={` max-w-3xl xl:max-w-6xl mx-auto ${styles.paddingX} text-center`}
       >
-        <h1 className=" text-[2.0rem]">
+        <h1 className=" text-[2.5rem]">
           {"<"}<span className="text-[#5379FE] uppercase">Miyagi</span>{">"}<br/>A <span className="text-[#5379FE]"></span>decentralised application built for the <span className="text-[#5379FE]">curious, </span><br className="hidden lg:inline-block"/>
           Formulated by the <span className="text-[#5379FE]">dreamers</span>  & <span className="text-[#5379FE]">thinkers</span> of the <span className="text-[#5379FE]">Indian Subcontinent</span>.
         </h1>
