@@ -23,7 +23,7 @@ function HomeTwo() {
 
         <Power />
         <Offer className="hidden lg:block" />
-        <OfferTwo className="lg:hidden" />
+        <OfferTwo className="lg:hidden mb-40" />
         {/* <Goal /> */}
         <GlideCarousel />
         <Knowledge />

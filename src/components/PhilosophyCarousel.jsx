@@ -44,7 +44,7 @@ const PhilosophyCarousel = () => {
   }, []);
 
   return (
-    <div id="philosophy-carousel" className="glide">
+    <div id="philosophy-carousel" className="glide" style={{paddingTop:0}}>
       <div className="glide__track" data-glide-el="track">
         <ul className="glide__slides">
           {testimonials.map((testimonial, index) => (
