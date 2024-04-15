@@ -107,7 +107,7 @@ function Hero() {
         className={`mt-[40px] w-full md:max-w-[44rem]  lg:max-w-5xl mx-auto ${styles.paddingX} flex flex-row items-start`}
       >
         <div className=" mx-auto flex flex-col gap-[2rem]">
-          <div className="text-center text-[2.0rem]">
+          <div className="text-center text-[2.3rem]">
           Unlike data storage providers who blatantly harvest
 your data “Legally” by barricading access to their
 application unless you accept sabotaging T&C’s
