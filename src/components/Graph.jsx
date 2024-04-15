@@ -49,6 +49,70 @@ export default function Graph() {
                 <tbody className="bg-white divide-y divide-gray-200">
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                      Data Privacy
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      <div className="flex space-x-1">
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-gray-300" />
+                        <SquareIcon className="text-gray-300" />
+                        <SquareIcon className="text-gray-300" />
+                      </div>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      <div className="flex space-x-1">
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-gray-300" />
+                        <SquareIcon className="text-gray-300" />
+                      </div>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      <div className="flex space-x-1">
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                      Redundancy
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      <div className="flex space-x-1">
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-gray-300" />
+                        <SquareIcon className="text-gray-300" />
+                        <SquareIcon className="text-gray-300" />
+                      </div>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      <div className="flex space-x-1">
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-gray-300" />
+                        <SquareIcon className="text-gray-300" />
+                      </div>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      <div className="flex space-x-1">
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-[#5379fe]" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                       Tamper-Proof
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
@@ -96,8 +160,8 @@ export default function Graph() {
                       <div className="flex space-x-1">
                         <SquareIcon className="text-[#5379fe]" />
                         <SquareIcon className="text-[#5379fe]" />
-                        <SquareIcon className="text-[#5379fe]" />
-                        <SquareIcon className="text-[#5379fe]" />
+                        <SquareIcon className="text-gray-300" />
+                        <SquareIcon className="text-gray-300" />
                         <SquareIcon className="text-gray-300" />
                       </div>
                     </td>
