@@ -14,16 +14,16 @@ export default function Comparison() {
       <div className="grid grid-cols-5 gap-2 text-gray-900 mb-4">
         <div className="col-span-1" />
         <div className="flex justify-center items-center">
-          <CloudIcon className="h-6 w-6" />
+          <CloudIcon className="h-4 w-4" /><a>AWS</a>
         </div>
         <div className="flex justify-center items-center">
-          <CloudIcon className="h-6 w-6" />
+          <CloudIcon className="h-4 w-4" /><a>Cloud</a>
         </div>
         <div className="flex justify-center items-center">
-          <CloudIcon className="h-6 w-6" />
+          <CloudIcon className="h-4 w-4" /><a>Web3</a>
         </div>
         <div className="flex justify-center items-center">
-          <SplineIcon className="h-6 w-6" />
+          <SplineIcon className="h-4 w-4" /><a>Miyagi</a>
         </div>
       </div>
       <div className="grid grid-cols-5 gap-2 text-gray-900 mb-4">
