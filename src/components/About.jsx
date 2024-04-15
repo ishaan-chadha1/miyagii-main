@@ -67,27 +67,23 @@ reins to your assets."
       >
         <div className=" mx-auto flex flex-col gap-[4rem]">
           <div
-            className={`text-center text-[#807E87] text-[1.1rem] font-normal leading-7 md:leading-7  capitalize`}
+            className={`text-center text-[#807E87] text-[1.5rem] font-normal leading-7 md:leading-7  capitalize`}
           >
             {"<"}
             <span className="text-[#5379FE]">
               Try out Miyagi for free and let us know how you feel about it.
             </span>
-            Your opinion matters to us. A Long time{" "}
-            <br className="hidden md:inline-block" /> ago, someone asked one of
+            Your opinion matters to us. A Long time{" "} ago, someone asked one of
             our founders,
             <span className="text-[#5379FE]">“What does the user want?’.</span> {" />"}
           </div>
-          <div className="text-center text-[#807E87] text-[1.1rem] font-normal leading-7 md:leading-7  capitalize">
+          <div className="text-center text-[#807E87] text-[1.5rem] font-normal leading-7 md:leading-7  capitalize">
             That simple yet
-            <br />
             Complex question still resonates with us and remains one of the core
             philosophies of <span className="text-[#5379FE]"> Miyagi</span>.
             Your feedback adds to the landscape of{" "}
             <span className="text-[#5379FE]"> Miyagi</span> and with your help,
-            one day we would find the solution to{" "}
-            <br className="hidden md:inline-block" /> That Resonating Question
-            {">"}
+            one day we would find the solution to{" "} That Resonating Question
           </div>
         </div>
       </div>
