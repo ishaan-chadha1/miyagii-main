@@ -64,6 +64,7 @@ function Contact() {
             
         </div>
         <div className="w-full lg:w-[50%] flex flex-wrap justify-center gap-6">
+          <Tilt>
           <div className="w-[312px] md:w-[330px] h-[220px] md:h-[280px] lg:w-[218px] lg:h-[348px] xl:w-[310px] xl:h-[320px] bg-blue-500 rounded-3xl p-4 md:p-6 flex flex-col gap-4 text-center">
             <div className="flex flex-col gap-2 md:gap-4">
               <h1 className="text-white text-[25px] md:text-[35px] xl:text-[40px]">SDK</h1>
@@ -84,7 +85,8 @@ function Contact() {
               </motion.button>
             </div>
           </div>
-          
+         </Tilt>
+         <Tilt> 
           <div className="w-[312px] md:w-[330px] h-[220px] md:h-[280px] lg:w-[218px] lg:h-[348px] xl:w-[310px] xl:h-[320px] bg-blue-500 rounded-3xl p-4 md:p-6 flex flex-col gap-4 text-center">
             <div className="flex flex-col gap-2 md:gap-4">
               <h1 className="text-white text-[25px] md:text-[35px] xl:text-[40px]">API</h1>
@@ -105,7 +107,7 @@ function Contact() {
               </motion.button>
             </div>
           </div>
-          
+          </Tilt>
         </div>
       </div>
     </section>
