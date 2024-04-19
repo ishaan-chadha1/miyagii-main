@@ -106,9 +106,9 @@ function Knowledge() {
       >
         <h1
           className= 
-          "text-[1.7rem] text-white uppercase text-center"
+          " mt-0 text-[1.5rem] text-white uppercase text-center"
         >
-          <span className="text-black  ">
+          <span className="text-black ">
           With the knowledge that your digital belongings will be preserved forever and are easily verifiable on the chain, you can enjoy a stress-free seamless interaction with our timeless technology.
           </span>
         </h1>
