@@ -63,12 +63,12 @@ function BarChart(props) {
     <div {...props}>
       <ResponsiveBar
         data={[
-          { name: "Jan", count: 111 },
-          { name: "Feb", count: 157 },
-          { name: "Mar", count: 129 },
-          { name: "Apr", count: 150 },
-          { name: "May", count: 119 },
-          { name: "Jun", count: 72 },
+          { name: "AWS", count: 111 },
+          { name: "Google Cloud", count: 157 },
+          { name: "Azure", count: 129 },
+          { name: "OneDrive", count: 150 },
+          { name: "DropBox", count: 119 },
+          { name: "Miyagi", count: 72 },
         ]}
         keys={["count"]}
         indexBy="name"
