@@ -25,7 +25,7 @@ function Power() {
       // Here you can add additional animations or actions
       // after both images are loaded.
       // For example, you can unpin the viewport.
-       gsap.to(".trigger1", { scrollTrigger: { pin: true } });
+      gsap.to(".trigger1", { scrollTrigger: { pin: true } });
     };
 
     const loadImages = () => {
@@ -71,14 +71,14 @@ function Power() {
       ref={ref}
     >
       <div>
-          <h2
-            className={`${styles.heroHeadText}  text-white uppercase text-center`}
-          >
-            <span
-            style={{fontWeight:"600"}} 
-            className="text-black">Unlock The Power of Blockchain</span>
-          </h2>
-        </div>
+        <h2
+          className={`${styles.heroHeadText}  text-white uppercase text-center`}
+        >
+          <span style={{ fontWeight: "600" }} className="text-black">
+            Unlock The Power of Blockchain
+          </span>
+        </h2>
+      </div>
       <motion.img
         className="box box7 absolute top-[80vh] right-[10vw] xl:top-[75vh] xl:right-[20vw] rotate-[-40.33] hidden md:inline-block"
         src={box13}
@@ -120,32 +120,36 @@ function Power() {
         <div className="pb-[50px] xl:mr-[0rem] lg:pt-[50px] lg:pb-[50px] xl:pt-[120px] xl:pb-[120px] w-full lg:w-[55%] flex flex-col justify-between lg:flex-row items-center">
           <div className="w-[85%] md:p-6 text-center md:text-left">
             <h1
-            style={{fontWeight:600}} 
-            className="w-full text-[1.9rem] uppercase font-normal">
+              style={{ fontWeight: 600 }}
+              className="w-full text-[1.9rem] uppercase font-normal"
+            >
               “POWER TO THE PEOPLE”
             </h1>
             <div className="flex flex-col gap-10">
-  <p className="w-full text-black text-[1.3rem] capitalize font-light mt-4 leading-7 tracking-wide">
-    Whether it be having an easy-to-use
-    <span className="text-black">Verification</span> and
-    <span className="text-black"> Timestamping platform for all your Documents</span>
-    or the sheer simplicity of
-    <span className="text-black">Decentralised Data Storage,</span>
-    we do it all and this is but the
-    <span className="text-black">tip of iceberg</span>.
-  </p>
-  <p className="w-full text-black text-[1.2rem] capitalize font-light leading-7 tracking-wide">
-    Just like <span className="text-black">Satoshi</span> envisioned Bitcoin taking over financial institutions by
-    dreaming of a world which is
-    <span className="text-black">fair</span> &
-    <span className="text-black">democratised</span>, We at
-    <span className="text-black">Miyagi</span> envision to
-    create a similar level of disruption in the cloud storage
-    ecosystem by leveraging the fundamentals of Blockchain Technology
-    and core principles of Satoshi’s philosophy.
-  </p>
-</div>
-
+              <p className="w-full text-black text-[1.3rem] capitalize font-light mt-4 leading-7 tracking-wide">
+                Whether it be having an easy-to-use
+                <span className="text-black">Verification</span> and
+                <span className="text-black">
+                  {" "}
+                  Timestamping platform for all your Documents
+                </span>
+                or the sheer simplicity of
+                <span className="text-black">Decentralised Data Storage,</span>
+                we do it all and this is but the
+                <span className="text-black">tip of iceberg</span>.
+              </p>
+              <p className="w-full text-black text-[1.2rem] capitalize font-light leading-7 tracking-wide">
+                Just like <span className="text-black">Satoshi</span> envisioned
+                Bitcoin taking over financial institutions by dreaming of a
+                world which is
+                <span className="text-black">fair</span> &
+                <span className="text-black">democratised</span>, We at
+                <span className="text-black">Miyagi</span> envision to create a
+                similar level of disruption in the cloud storage ecosystem by
+                leveraging the fundamentals of Blockchain Technology and core
+                principles of Satoshi’s philosophy.
+              </p>
+            </div>
           </div>
         </div>
       </div>
