@@ -111,19 +111,18 @@ function Believe() {
           transition={{ duration: 1, delay:0.5 }}
         >
           <h2
-           className="text-[1.9rem] text-white uppercase text-center"
+           className="text-[1.7rem] text-white uppercase text-center"
           >
             <span className="text-black ">
               If you believe in <span className="text-[#5379FE]"> Data ownership, Tech craftsmanship</span> and <br className="hidden lg:inline-block"/> <span className="text-[#5379FE">Bringing
               the power back to the people,</span> we would<br className="hidden lg:inline-block"/> recommend you try out <span className="text-[#5379FE]">Miyagi.</span> 
             </span>
           </h2>
-
           <h2
-            className="text-[1.7rem] text-white uppercase text-center"
+           className="text-[1.7rem] text-white uppercase text-center"
           >
-            <span className="text-black  text-[2.0rem]">
-              We hope that with your help, <span className="text-[#5379FE]">Miyagi</span> can propel the <br className="hidden lg:inline-block"/> world towards a
+            <span className="text-black ">
+            We hope that with your help, <span className="text-[#5379FE]">Miyagi</span> can propel the <br className="hidden lg:inline-block"/> world towards a
               future where the issues relating to<br className="hidden lg:inline-block"/> data ownership are no longer a
               concern.
             </span>
