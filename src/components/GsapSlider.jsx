@@ -14,66 +14,51 @@ function Offer() {
   const [activeBox, setActiveBox] = useState(1);
 
   useEffect(() => {
-    const details = gsap.utils.toArray(
-      ".desktopContentSection:not(:first-child)"
-    );
-    const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)");
+    let updateActiveBox;
+    if (isLargeScreen) {
+      // Perform setup for animations only if it's a large screen
+      const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)");
 
-    gsap.set(photos, { yPercent: 101 });
-
-    let mm = gsap.matchMedia();
-
-    mm.add("(min-width: 600px)", () => {
-      console.log("desktop");
-
+      gsap.set(photos, { yPercent: 101 });
       ScrollTrigger.create({
         trigger: ".gallery",
         start: "top top",
         end: "bottom bottom",
         pin: ".right",
-        
       });
 
-    });
-    const updateActiveBox = () => {
-      const scrollPosition = (window.scrollY + 2700);
-      const boxIndex = Math.floor(scrollPosition / window.innerHeight) - 4;
-      console.log(boxIndex);
-      console.log( window.scrollY)
+      updateActiveBox = gsap.utils.throttle(() => {
+        const scrollPosition = window.scrollY + window.innerHeight * 0.75;
+        const boxIndex = Math.floor(scrollPosition / window.innerHeight);
+        setActiveBox(boxIndex);
+      }, 200); // Throttle the updates to improve performance
 
-     
-      setActiveBox(boxIndex);
-    };
+      window.addEventListener("scroll", updateActiveBox);
 
-    
-    window.addEventListener("scroll", updateActiveBox);
+      gsap.to(".box8", {
+        scrollTrigger: {
+          trigger: ".trigger2",
+          start: "top top",
+          scrub: 1,
+        },
+        x: -500,
+        y: 200,
+        z: 200,
+        ease: Power1.easeOut, // Use easeOut for smoother end to the animation
+      });
 
-   
-    gsap.to(".box8", {
-      scrollTrigger: {
-        trigger: ".trigger2",
-        start: "top top",
-        scrub: 1,
-      },
-      x: -500,
-      y: 200,
-      z: 200,
-      ease: Power1,
-      duration: 2,
-    });
-
-    gsap.to(".box9", {
-      scrollTrigger: {
-        trigger: ".trigger2",
-        start: "top top",
-        scrub: 1,
-      },
-      x: 300,
-      y: 200,
-      z: 200,
-      ease: Power1,
-      duration: 2,
-    });
+      gsap.to(".box9", {
+        scrollTrigger: {
+          trigger: ".trigger2",
+          start: "top top",
+          scrub: 1,
+        },
+        x: 300,
+        y: 200,
+        z: 200,
+        ease: Power1.easeOut,
+      });
+    }
 
     const handleResize = () => {
       setIsLargeScreen(window.innerWidth > 1024);
@@ -83,11 +68,13 @@ function Offer() {
 
     return () => {
       window.removeEventListener("resize", handleResize);
-      window.removeEventListener("scroll", updateActiveBox);
+      if (updateActiveBox) {
+        window.removeEventListener("scroll", updateActiveBox);
+      }
+      // Kill all ScrollTriggers to prevent memory leaks
+      ScrollTrigger.getAll().forEach((st) => st.kill());
     };
-     
-
-  }, []);
+  }, [isLargeScreen]);
 
   if (!isLargeScreen) {
     return null;
