@@ -16,7 +16,7 @@ function Esign() {
     <>
       <Header />
       <EsignBanner/>
-      <EsignCard/>
+      {/* <EsignCard/> */}
       {/* <Description/> */}
       <Esigns/>
       {/* <EsignSubscription /> */}

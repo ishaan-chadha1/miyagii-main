@@ -39,7 +39,7 @@ function EsignBanner() {
 
   return (
     <section
-      className={`trigger20 background relative w-full min-h-[100vh] pt-[270px] pb-[100px] md:pt-[270px] md:pb-[270px] md:min-h-[100vh] mx-auto `}
+      className={`trigger20 background relative w-full min-h-[100vh] pt-[270px] pb-[100px] md:pt-[270px] md:pb-[20px] md:min-h-[100vh] mx-auto `}
     >
       <motion.img
         className="box box1 absolute top-[5vh] left-[0px] xl:top-[10vh] hidden md:inline-block xl:left-[0px] rotate-[-40.33]"
