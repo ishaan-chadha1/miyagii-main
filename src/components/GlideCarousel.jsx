@@ -4,7 +4,7 @@ import "@glidejs/glide/dist/css/glide.core.min.css";
 import "./GlideCarousel.css";
 
 const slideData = [
-  { title: 'Finally', description: 'Slide Description 1' },
+  { title: 'Test Card For Heading', description: 'The content of this slide is to show Farraz what these cards will look like once there is content in them. I dont feel like we need to change the styling but if you feel like we do, then we can. This is just some more test content to show what itll actually look like' },
   { title: 'Getting', description: 'Slide Description 2' },
   { title: 'The Data ', description: 'Slide Description 3' },
   { title: 'To Display', description: 'Slide Description 4' },
