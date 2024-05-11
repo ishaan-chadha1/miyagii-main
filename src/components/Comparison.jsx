@@ -3,6 +3,7 @@ import { ResponsiveBar } from "@nivo/bar";
 export default function Comparison() {
   return (
     <div
+      style={{ fontFamily: "Cabin,sans-serif"}}
       key="1"
       className="bg-transparent p-4 rounded-lg max-w-3xl mx-auto shadow-lg border border-gray-200"
     >
@@ -58,54 +59,73 @@ export default function Comparison() {
   );
 }
 
-function BarChart(props) {
+function BarChart() {
+  const data = [
+    { name: "AWS", count: 111 },
+    { name: "Google Cloud", count: 157 },
+    { name: "Azure", count: 129 },
+    { name: "OneDrive", count: 150 },
+    { name: "DropBox", count: 119 },
+    { name: "Miyagi", count: 72 },
+  ];
+
   return (
-    <div {...props}>
+    <div style={{ height: '250px' }}>
       <ResponsiveBar
-        data={[
-          { name: "AWS", count: 111 },
-          { name: "Google Cloud", count: 157 },
-          { name: "Azure", count: 129 },
-          { name: "OneDrive", count: 150 },
-          { name: "DropBox", count: 119 },
-          { name: "Miyagi", count: 72 },
-        ]}
+        data={data}
         keys={["count"]}
         indexBy="name"
-        margin={{ top: 0, right: 0, bottom: 40, left: 40 }}
+        margin={{ top: 20, right: 20, bottom: 60, left: 60 }}
         padding={0.3}
-        colors={["#5379FE"]}
+        colors={bar => bar.data.name === "Miyagi" ? "#5379FE" : "#ccc"}
+        borderColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
         axisBottom={{
-          tickSize: 0,
-          tickPadding: 16,
+          tickSize: 5,
+          tickPadding: 5,
+          tickRotation: 0,
+          legendPosition: 'middle',
+          legendOffset: 32
         }}
         axisLeft={{
-          tickSize: 0,
-          tickValues: 4,
-          tickPadding: 16,
+          tickSize: 5,
+          tickPadding: 5,
+          tickRotation: 0,
+          legendPosition: 'middle',
+          legendOffset: -40
         }}
-        gridYValues={4}
+        labelSkipWidth={12}
+        labelSkipHeight={12}
+        labelTextColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
+        animate={true}
+        motionStiffness={90}
+        motionDamping={15}
         theme={{
+          fontFamily: 'Cabin, sans-serif', // Change this to your website's global font if different
+          fontSize: 12,
           tooltip: {
-            chip: {
-              borderRadius: "9999px",
-            },
             container: {
-              fontSize: "12px",
-              textTransform: "capitalize",
-              borderRadius: "6px",
-            },
+              background: '#ffffff',
+              color: '#333333',
+              fontSize: '12px',
+              borderRadius: '4px',
+              boxShadow: '0 3px 6px rgba(0,0,0,0.1)',
+              padding: '5px'
+            }
           },
           grid: {
             line: {
-              stroke: "#5379FE",
+              stroke: "#e0e0e0",
+              strokeWidth: 1
             },
           },
         }}
-        tooltipLabel={({ id }) => `${id}`}
-        enableLabel={false}
+        tooltip={({ id, value, color }) => (
+          <strong style={{ color }}>
+            {id}: ${value}
+          </strong>
+        )}
         role="application"
-        ariaLabel="A bar chart showing data"
+        ariaLabel="Bar Chart showing pricing data"
       />
     </div>
   );
