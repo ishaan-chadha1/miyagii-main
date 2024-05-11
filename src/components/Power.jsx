@@ -120,7 +120,8 @@ function Power() {
         <div className="pb-[50px] xl:mr-[0rem] lg:pt-[50px] lg:pb-[50px] xl:pt-[120px] xl:pb-[120px] w-full lg:w-[55%] flex flex-col justify-between lg:flex-row items-center">
           <div className="w-[85%] md:p-6 text-center md:text-left">
             <h1
-              style={{ fontWeight: 600 }}
+              style={{ fontWeight: 1000
+              }}
               className="w-full text-[1.9rem] uppercase font-normal"
             >
               “POWER TO THE PEOPLE”
@@ -138,7 +139,7 @@ function Power() {
                 we do it all and this is but the
                 <span className="text-black">tip of iceberg</span>.
               </p>
-              <p className="w-full text-black text-[1.2rem] capitalize font-light leading-7 tracking-wide">
+              <p className="w-full text-black text-[1.2rem] capitalize font-light leading-7 tracking-wide pt-10">
                 Just like <span className="text-black">Satoshi</span> envisioned
                 Bitcoin taking over financial institutions by dreaming of a
                 world which is
