@@ -597,3 +597,17 @@ label {
 .parallax-effect{
   transform-style: preserve-3d;
 }
+
+
+svg {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+svg:hover {
+  transform: scale(1.1);
+}
+
+svg.hover:scale-110:hover {
+  transform: scale(1.1);
+}
