@@ -9,6 +9,7 @@ import Graph from "../components/Graph";
 import { useEffect } from "react";
 import Comparison from "../components/Comparison";
 import PhilosophyCarousel from "../components/PhilosophyCarousel";
+import { PhilCards } from "../components/PhilCards";
 
 function Philosophy() {
     useEffect(()=>{
@@ -20,7 +21,7 @@ function Philosophy() {
     {/* <Power/> */}
     <About/>
     <Graph />
- 
+    <PhilCards />
     <Believe/>
     <Comparison />
     <Location/>
