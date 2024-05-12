@@ -1,7 +1,6 @@
 import { styles } from "../styles";
-import { Offer4, Offer5, Offer6, Image1 } from "../assets";
+import { Offer4, Offer5, Offer6, box1, box9 } from "../assets";
 import { motion } from "framer-motion";
-import { box1, box9 } from "../assets";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power1 } from "gsap";
@@ -19,18 +18,9 @@ function Offer() {
   const [activeBox, setActiveBox] = useState(1);
 
   useEffect(() => {
-    const details = gsap.utils.toArray(
-      ".desktopContentSection:not(:first-child)"
-    );
-    const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)");
-
-    gsap.set(photos, { yPercent: 101 });
-
     let mm = gsap.matchMedia();
 
     mm.add("(min-width: 600px)", () => {
-      console.log("desktop");
-
       gsap.to(".desktopContentSection", {
         scrollTrigger: {
           trigger: ".gallery",
@@ -38,19 +28,17 @@ function Offer() {
           start: "top top",
           end: "bottom bottom",
           endTrigger: ".last",
-          scrub: 1,
+          scrub: true,
         },
         y: "-350%",
-        ease: Power1,
+        ease: Power1.easeOut,
       });
     });
-    const updateActiveBox = () => {
-      const scrollPosition = window.scrollY + window.innerHeight*3.4;
-      const boxIndex = Math.floor(scrollPosition / window.innerHeight) - 4;
-      // console.log(boxIndex);
-      // console.log(window.scrollY);
 
-      setActiveBox(boxIndex);
+    const updateActiveBox = () => {
+      const scrollPosition = window.scrollY + window.innerHeight * 3.4;
+      const boxIndex = Math.floor(scrollPosition / window.innerHeight) - 4;
+      setActiveBox(Math.max(1, Math.min(boxIndex, 3)));  // Keep activeBox between 1 and 3
     };
 
     window.addEventListener("scroll", updateActiveBox);
@@ -59,26 +47,26 @@ function Offer() {
       scrollTrigger: {
         trigger: ".trigger2",
         start: "top top",
-        scrub: 1,
+        scrub: true,
       },
       x: -500,
       y: 200,
       z: 200,
-      ease: Power1,
-      duration: 2,
+      ease: "power1.out",
+      duration: 1.5,
     });
 
     gsap.to(".box9", {
       scrollTrigger: {
         trigger: ".trigger2",
         start: "top top",
-        scrub: 1,
+        scrub: true,
       },
       x: 300,
       y: 200,
       z: 200,
-      ease: Power1,
-      duration: 2,
+      ease: "power1.out",
+      duration: 1.5,
     });
 
     const handleResize = () => {
@@ -100,7 +88,7 @@ function Offer() {
   return (
     <section className={`trigger2 w-full relative min-h-[100vh] mx-auto`}>
       <motion.img
-        className="box box8 absolute top-[10vh] left-[0px] rotate-[-40.33]  hidden md:inline-block"
+        className="box box8 absolute top-[10vh] left-[0px] rotate-[-40.33] hidden md:inline-block"
         src={box1}
         alt="box"
       />
@@ -112,12 +100,12 @@ function Offer() {
 
       <div className="mt-[50px] md:mt-[100px]">
         <h1
-          className={`${styles.heroHeadText}  text-white uppercase text-center`}
+          className={`${styles.heroHeadText} text-white uppercase text-center`}
         >
           <span className="text-black">
             What does {"<"}
             <span className="text-[#5379FE]">MIYAGI</span>
-            {">"} have to  offer?
+            {">"} have to offer?
           </span>
         </h1>
       </div>
@@ -127,7 +115,7 @@ function Offer() {
       >
         <div className="gallery">
           <div className="right">
-            <div className="desktopPhotos  ">
+            <div className="desktopPhotos">
               <div className="desktopPhoto red">
                 <div
                   className={`border-2 mt-4 p-4 leading-6 tracking-wide ${
@@ -174,7 +162,7 @@ function Offer() {
                     Tired of relying on traditional, easily forgeable
                     verification methods? Enter a new era of unassailable trust
                     and transparency with Blockchain-powered document
-                    verification ensure authenticity and trust while bidding
+                    verification. Ensure authenticity and trust while bidding
                     farewell to counterfeiting concerns.
                   </p>
                 </div>
@@ -187,15 +175,13 @@ function Offer() {
                 <motion.div className="desktopContentSection">
                   {activeBox === 1 && (
                     <motion.img
-                      src={Offer6}
-                      alt=""
-                      className="img img1 rounded-[20px]"
-                      initial={{
-                        opacity: 0,
-                      }}
-                      animate={{ opacity: inView ? 1 : 0 }}
-                      transition={{ duration: 1, delay: 0.5 }}
-                    />
+                    src={Offer6}
+                    alt=""
+                    className="img img1 rounded-[20px]"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: inView ? 1 : 0 }}
+                    transition={{ duration: 2.5, delay: 0 }}  // Increased duration for the first card
+                  />
                   )}
                 </motion.div>
               )}
@@ -206,11 +192,9 @@ function Offer() {
                       src={Offer4}
                       alt=""
                       className="img img2 rounded-[20px]"
-                      initial={{
-                        opacity: 0,
-                      }}
+                      initial={{ opacity: 0 }}
                       animate={{ opacity: inView ? 1 : 0 }}
-                      transition={{ duration: 1, delay: 0.5 }}
+                      transition={{ duration: 0.8, delay: 0.6 }}
                     />
                   )}
                 </motion.div>
@@ -221,12 +205,10 @@ function Offer() {
                     <motion.img
                       src={Offer5}
                       alt=""
-                      className="img img3 last rounded-[20px] "
-                      initial={{
-                        opacity: 0,
-                      }}
+                      className="img img3 last rounded-[20px]"
+                      initial={{ opacity: 0 }}
                       animate={{ opacity: inView ? 1 : 0 }}
-                      transition={{ duration: 1, delay: 0.5 }}
+                      transition={{ duration: 0.8, delay: 0.2 }}
                     />
                   )}
                 </motion.div>
@@ -234,21 +216,6 @@ function Offer() {
             </motion.div>
           </div>
         </div>
-
-        {/* <div className="right w-full mt-[4rem] h-[65vh] overflow-auto ">
-          
-          <img src={Offer1} alt="" className="img1 h-full rounded-[20px]" />
-          <img
-            src={Offer2}
-            alt=""
-            className="img2 rounded-[20px] md:mt-[6rem] h-full lg:mt-[3.5rem]"
-          />
-          <img
-            src={Offer3}
-            alt=""
-            className="img3 last rounded-[20px] md:mt-[6rem] md:mb-[3rem] h-full lg:mt-[3.5rem]"
-          />
-        </div> */}
       </div>
     </section>
   );
