@@ -611,3 +611,9 @@ svg:hover {
 svg.hover:scale-110:hover {
   transform: scale(1.1);
 }
+.card {
+  background-color: white !important; /* Using !important to ensure override */
+}
+.card * { /* Ensures all child elements inside the card also have black text */
+  color: black !important;
+}
