@@ -22,7 +22,7 @@ function About() {
 
   return (
     <section
-    className="about w-full min-h-[70vh] pt-[10vh] pb-[10vh] flex flex-col gap-[3rem] relative mx-auto"
+    className="about w-full min-h-[70vh] pt-[0vh] pb-[10vh] flex flex-col gap-[3rem] relative mx-auto"
     ref={ref}
   >
     {/* PhilosophyCarousel already renders, uncomment below if needed */}
