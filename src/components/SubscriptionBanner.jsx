@@ -69,8 +69,8 @@ function SubscriptionBanner() {
       <div
         className={`mt-[40px] w-full md:max-w-[44rem]  lg:max-w-5xl mx-auto ${styles.paddingX} flex flex-row items-start`}
       >
-        <div className=" mx-auto flex flex-col gap-[0.5rem]">
-          <div className={`text-center ${styles.heroSubText} font-semibold`}>
+        <div className=" mx-auto flex flex-col gap-[1rem]">
+          <div className={`text-center ${styles.heroSubText} font-semibold pb-10`}>
           Why should you upload to the chain?
           </div>
           <div className="text-center text-[#807E87] text-[1.1rem] font-normal leading-7 md:leading-7 ">

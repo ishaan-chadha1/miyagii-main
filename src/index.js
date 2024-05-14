@@ -73,7 +73,7 @@ export const featurecardtwo = [
       Image1: immutability1,
       heading: "Decentralized verification",
       content:
-        "Blockchain e-sigs can be independently verified by any party without relying on a central database or service provider, enhancing availability and removing single point of failure risks that exist with traditional e-sigs.",
+        "Blockchain e-signatures can be independently verified by any party without relying on a central database or service provider. This enhances availability and removes single points of failure risks that exist with traditional e-signatures.",
     },
   
     {
@@ -81,7 +81,7 @@ export const featurecardtwo = [
       Image1:impenetrability1,
       heading: "Document integrity",
       content:
-        "Storing a hash fingerprint on an immutable blockchain allows any changes made to the source document stored in IPFS to be immutably detected, providing superior evidence of tampering compared to traditional e-signs. ",
+        "Storing a hash fingerprint on an immutable blockchain allows any changes made to the source document stored in IPFS to be immutably detected. This provides superior evidence of tampering compared to traditional e-signatures.",
     },
   
     {
@@ -89,7 +89,7 @@ export const featurecardtwo = [
       Image1:verifiability1,
       heading: "Non-repudiable",
       content:
-        "The cryptographic signing technique and public/private key pair system used for blockchain e-sigs assigns accountability to the signers' identities, preserving this linkage permanently on the decentralized ledger. Traditional e-sigs can have ambiguity around signer identities.",
+        "Using a cryptographic signing technique and public/private key pair system, blockchain e-signatures ensure accountability of signers' identities. This permanent linkage on a decentralized ledger contrasts with traditional e-signatures, which may have ambiguity regarding signer identities.",
     },
   
     {
@@ -97,7 +97,7 @@ export const featurecardtwo = [
       Image1:timestamping1,
       heading: "Cost-effective scalability",
       content:
-        "The decentralized and programmable architecture of blockchain e-signatures means that additional signature volume and users can be added with negligible incremental cost. Compared to traditional centralized e-signature solutions, blockchains offer significantly better economics for scaling up digital signature usage within an organization. ",
+        "Blockchain e-signatures have a decentralized architecture, allowing additional signatures and users to be added with minimal cost. Unlike traditional centralized e-signature solutions, blockchains offer much better economics for scaling digital signature usage within an organization.",
     },
   ];
 

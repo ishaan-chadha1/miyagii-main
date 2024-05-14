@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { featurecardthree } from "..";
 import Tilt from 'react-parallax-tilt';
 
-
 function FeatureCard({ Image, Image1, heading, content, index }) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -18,27 +17,27 @@ function FeatureCard({ Image, Image1, heading, content, index }) {
 
   return (
     <Tilt>
-    <div key={index} className="activeBox"
-     onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-     >
-      <div className="inneractiveBox flex flex-col w-[280px] h-full rounded-3xl shadow border border-slate-200 p-6 gap-3 md:gap-4">
-        <div className="featured-image w-[100px] h-[100px] bg-blue-500 rounded-[20px]">
-          <img className={`feature-image ${isHovered ? "hidden" : ""}`} src={Image} alt="" />
-          <img className={`feature-image1 ${isHovered ? "" : "hidden"}`} src={Image1} alt="" />
-        </div>
-        <div>
-          <h1 className="text-[20px] md:text-[25px] font-normal uppercase">
-            {heading}
-          </h1>
-        </div>
-        <div>
-          <p className="w-full text-[0.9rem] md:text-[1rem] font-thin capitalize leading-6 md:leading-7">
-            {content}
-          </p>
+      <div key={index} className="activeBox"
+        onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+      >
+        <div className="inneractiveBox flex flex-col w-[280px] h-full rounded-3xl shadow border border-slate-200 p-6 pb-10 gap-3 md:gap-4"> {/* Added pb-10 for extra padding at the bottom */}
+          <div className="featured-image w-[100px] h-[100px] bg-blue-500 rounded-[20px]">
+            <img className={`feature-image ${isHovered ? "hidden" : ""}`} src={Image} alt="" />
+            <img className={`feature-image1 ${isHovered ? "" : "hidden"}`} src={Image1} alt="" />
+          </div>
+          <div>
+            <h1 className="text-[20px] md:text-[25px] font-normal uppercase">
+              {heading}
+            </h1>
+          </div>
+          <div>
+            <p className="w-full text-[0.9rem] md:text-[1rem] font-thin capitalize leading-6 md:leading-7">
+              {content}
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </Tilt>
+    </Tilt>
   );
 }
 
