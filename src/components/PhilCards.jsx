@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardHeader, CardContent, CardFooter, CardTitle } from "./Card";
+import { Card, CardHeader, CardFooter, CardTitle, CardContent } from './Card';
 import { Button } from "./Button";
 
 export function PhilCards() {
