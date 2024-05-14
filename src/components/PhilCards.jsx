@@ -1,15 +1,15 @@
 import React from "react";
-import { Card, CardHeader, CardContent, CardFooter, CardTitle } from "./card";
-import { Button } from "./button";
+import { Card, CardHeader, CardContent, CardFooter, CardTitle } from "./Card";
+import { Button } from "./Button";
 
 export function PhilCards() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
-      <Card className="card transform transition duration-500 hover:bg-[#4D9BFF] hover:scale-105">
+      <Card hoverBgColor="#4D9BFF">
         <CardHeader>
           <CardTitle>Use Miyagi</CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="opacity-0 hover:opacity-100 transition-opacity duration-500">
           <p>
             Miyagi does not keep a trace of your data. Your assets are securely stored
             decentrally, making it immune to exploitation. We forgo the notion of negativity
@@ -22,11 +22,11 @@ export function PhilCards() {
           </Button>
         </CardFooter>
       </Card>
-      <Card className="card shadow-lg transform transition duration-500 hover:bg-[#4D9BFF] hover:scale-105">
+      <Card hoverBgColor="#4D9BFF">
         <CardHeader>
           <CardTitle>Build on Miyagi</CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="opacity-0 hover:opacity-100 transition-opacity duration-500">
           <p>
             Let us know how you feel about Miyagi. Your opinion matters to us. A long time ago,
             someone asked one of our founders, "What does the user want?". That simple yet
