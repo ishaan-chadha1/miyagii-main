@@ -25,7 +25,7 @@ function HomeTwo() {
         <Offer className="hidden lg:block" />
         <OfferTwo className="lg:hidden mb-40" />
         {/* <Goal /> */}
-        <GlideCarousel />
+        {/* <GlideCarousel /> */}
         <Knowledge />
         <AboutTwo />
         <Newsletter />

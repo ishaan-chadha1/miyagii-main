@@ -21,7 +21,7 @@ function Philosophy() {
     {/* <Power/> */}
     <About/>
     <Graph />
-    <PhilCards />
+    {/* <PhilCards /> */}
     <Believe/>
     <Comparison />
     <Location/>

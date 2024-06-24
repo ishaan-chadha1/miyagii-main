@@ -127,29 +127,22 @@ function Power() {
               “POWER TO THE PEOPLE”
             </h1>
             <div className="flex flex-col gap-10">
-              <p className="w-full text-black text-[1.3rem] capitalize font-light mt-4 leading-7 tracking-wide">
-                Whether it be having an easy-to-use
-                <span className="text-black">Verification</span> and
-                <span className="text-black">
-                  {" "}
-                  Timestamping platform for all your Documents
-                </span>
-                or the sheer simplicity of
-                <span className="text-black">Decentralised Data Storage,</span>
-                we do it all and this is but the
-                <span className="text-black">tip of iceberg</span>.
-              </p>
-              <p className="w-full text-black text-[1.2rem] capitalize font-light leading-7 tracking-wide pt-10">
-                Just like <span className="text-black">Satoshi</span> envisioned
-                Bitcoin taking over financial institutions by dreaming of a
-                world which is
-                <span className="text-black">fair</span> &
-                <span className="text-black">democratised</span>, We at
-                <span className="text-black">Miyagi</span> envision to create a
-                similar level of disruption in the cloud storage ecosystem by
-                leveraging the fundamentals of Blockchain Technology and core
-                principles of Satoshi’s philosophy.
-              </p>
+            <p className="w-full text-black text-[1.3rem] capitalize font-light mt-4 leading-7 tracking-wide">
+    Whether it's having an easy-to-use <span className="text-black">Verification</span> and <br></br>
+    <span className="text-black">Timestamping platform for all your Documents</span>
+    or the sheer simplicity of <span className="text-black">Decentralised Data Storage,</span>
+    we do it all and this is but the <span className="text-black">tip of the iceberg</span>.
+</p>
+<p className="w-full text-black text-[1.2rem] capitalize font-light leading-7 tracking-wide pt-10">
+    Just like <span className="text-black">Satoshi</span> envisioned
+    Bitcoin taking over financial institutions by dreaming of a
+    world which is <span className="text-black">fair</span> &
+    <span className="text-black">democratised</span>, We at
+    <span className="text-black">Miyagi</span> envision to create a
+    similar level of disruption in the cloud storage ecosystem by
+    leveraging the fundamentals of Blockchain Technology and core
+    principles of Satoshi’s philosophy.
+</p>
             </div>
           </div>
         </div>
