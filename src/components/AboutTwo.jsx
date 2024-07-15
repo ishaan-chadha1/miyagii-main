@@ -70,8 +70,6 @@ function AboutTwo() {
       <div
         className={`mt-[100px] max-w-7xl mx-auto ${styles.paddingX} items-start`}
       >
-        
-
         <div className=" flex flex-col justify-between mt-4 md:mt-[4rem] lg:flex-row items-center">
           <div className="image1  md:w-[50%] h-[20rem] md:h-[35vh] lg:h-[50vh] xl:w-[35rem] ">
             <motion.img
@@ -88,17 +86,23 @@ function AboutTwo() {
             />
           </div>
           <div className="w-full lg:w-[45%] md:p-6 text-center md:text-left">
+            <p className="w-full text-black text-[1.2rem] capitalize font-light mt-4 leading-7 tracking-wide pb-10">
+              With us, you receive the opportunity of preserving your digital
+              assets forever. Having your assets easily verifiable on the chain
+              ensures you experience a seamless, stressfree interaction" Next
+              line: The emergence of a new era is at hand, come onboard with
+              Miyagi.
+            </p>
             <h1 className=" w-full text-[1.7rem] uppercase font-normal">
               Welcome to the era of Decentralistion
             </h1>
-            <p className="w-full text-black text-[1.2rem] capitalize font-light leading-7 tracking-wide pt-10">
-                Just like Satoshi envisioned
-                Bitcoin taking over financial institutions by dreaming of a
-                world which is fair, democratised, We at Miyagi envision to create a
-                similar level of disruption in the cloud storage ecosystem by
-                leveraging the fundamentals of Blockchain Technology and core
-                principles of Satoshi’s philosophy.
-              </p>  
+            <p className="w-full text-black text-[1rem] capitalize font-light leading-7 tracking-wide pt-10">
+              Just like Satoshi envisioned Bitcoin taking over financial
+              institutions by dreaming of a world which is fair, democratised,
+              We at Miyagi envision to create a similar level of disruption in
+              the cloud storage ecosystem by leveraging the fundamentals of
+              Blockchain Technology and core principles of Satoshi’s philosophy.
+            </p>
           </div>
         </div>
       </div>
