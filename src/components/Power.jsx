@@ -119,30 +119,30 @@ function Power() {
 
         <div className="pb-[50px] xl:mr-[0rem] lg:pt-[50px] lg:pb-[50px] xl:pt-[120px] xl:pb-[120px] w-full lg:w-[55%] flex flex-col justify-between lg:flex-row items-center">
           <div className="w-[85%] md:p-6 text-center md:text-left">
+            <p className="w-full text-black text-[1.3rem] capitalize font-light mt-4 leading-7 tracking-wide">
+              "In a reality where your data is being exploited by tech giants
+              for their ulterior motives, we equip you with the necessary tools
+              to be different and fight back. Like John Lennon would say
+            </p>
             <h1
-              style={{ fontWeight: 1000
-              }}
-              className="w-full text-[1.9rem] uppercase font-normal"
+              style={{ fontWeight: 1000 }}
+              className="w-full text-[1.9rem] uppercase font-normal pt-10"
             >
               “POWER TO THE PEOPLE”
             </h1>
             <div className="flex flex-col gap-10">
-            <p className="w-full text-black text-[1.3rem] capitalize font-light mt-4 leading-7 tracking-wide">
-    Whether it's having an easy-to-use <span className="text-black">Verification</span> and <br></br>
-    <span className="text-black">Timestamping platform for all your Documents</span>
-    or the sheer simplicity of <span className="text-black">Decentralised Data Storage,</span>
-    we do it all and this is but the <span className="text-black">tip of the iceberg</span>.
-</p>
-<p className="w-full text-black text-[1.2rem] capitalize font-light leading-7 tracking-wide pt-10">
-    Just like <span className="text-black">Satoshi</span> envisioned
-    Bitcoin taking over financial institutions by dreaming of a
-    world which is <span className="text-black">fair</span> &
-    <span className="text-black">democratised</span>, We at
-    <span className="text-black">Miyagi</span> envision to create a
-    similar level of disruption in the cloud storage ecosystem by
-    leveraging the fundamentals of Blockchain Technology and core
-    principles of Satoshi’s philosophy.
-</p>
+              <p className="w-full text-black text-[1.3rem] capitalize font-light mt-4 leading-7 tracking-wide">
+                Whether it's having an easy-to-use{" "}
+                <span className="text-black">Verification</span> and <br></br>
+                <span className="text-black">
+                  Timestamping platform for all your Documents
+                </span>
+                or the sheer simplicity of{" "}
+                <span className="text-black">Decentralised Data Storage,</span>
+                we do it all and this is but the{" "}
+                <span className="text-black">tip of the iceberg</span>.
+              </p>
+             
             </div>
           </div>
         </div>

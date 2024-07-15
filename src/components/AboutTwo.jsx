@@ -91,11 +91,14 @@ function AboutTwo() {
             <h1 className=" w-full text-[1.7rem] uppercase font-normal">
               Welcome to the era of Decentralistion
             </h1>
-            <p className=" w-full text-[#807E87] text-[1rem] uppercase font-normal mt-4 leading-7 tracking-wide">
-              Like John Lennon would say, "In a reality where your data is being exploited by tech giants
-              for their ulterior motives, we equip you with the necessary tools
-              to be different and fight back."
-            </p>
+            <p className="w-full text-black text-[1.2rem] capitalize font-light leading-7 tracking-wide pt-10">
+                Just like Satoshi envisioned
+                Bitcoin taking over financial institutions by dreaming of a
+                world which is fair, democratised, We at Miyagi envision to create a
+                similar level of disruption in the cloud storage ecosystem by
+                leveraging the fundamentals of Blockchain Technology and core
+                principles of Satoshi’s philosophy.
+              </p>  
           </div>
         </div>
       </div>
