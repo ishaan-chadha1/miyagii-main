@@ -75,14 +75,15 @@ const Header = () => {
                       <span>Storage</span>
                     </motion.div>
                   </NavLink>
-                  <NavLink to="/verification">
+                  {/* <NavLink to="/verification">
                     <motion.div variants={dropdownVariants} initial="hidden" animate="visible" className="p-4 bg-[#fff] border-r-2 border-l-2 text-black hover:bg-blue-500 hover:text-white">
-                      <span>Verification</span>
+                      
+                      <span>Esign</span>
                     </motion.div>
-                  </NavLink>
+                  </NavLink> */}
                   <NavLink to="/esign">
                     <motion.div variants={dropdownVariants} initial="hidden" animate="visible" className="p-4 bg-[#fff] border-b-2 border-r-2 border-l-2 rounded-bl-lg rounded-br-lg text-black hover:bg-blue-500 hover:text-white">
-                      <span>Esign</span>
+                    <span>Verification</span>
                     </motion.div>
                   </NavLink>
                 </>
