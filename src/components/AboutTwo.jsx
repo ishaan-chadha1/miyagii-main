@@ -86,7 +86,7 @@ function AboutTwo() {
             />
           </div>
           <div className="w-full lg:w-[45%] md:p-6 text-center md:text-left">
-            <p className="w-full text-black text-[1.2rem] capitalize font-light mt-4 leading-7 tracking-wide pb-10">
+            <p className="w-full text-black text-[1rem] capitalize font-light mt-4 leading-7 tracking-wide pb-10">
               With us, you receive the opportunity of preserving your digital
               assets forever. Having your assets easily verifiable on the chain
               ensures you experience a seamless, stressfree interaction" Next
