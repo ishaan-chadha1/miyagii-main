@@ -97,6 +97,14 @@ function AboutThree() {
         src={box3}
         alt="box"
       />
+       <h2
+          className={`${styles.heroHead4Text} text-black uppercase text-center`}
+        >
+          "Miyagi does not keep a trace of your data. Your assets are securely
+          stored decentrally making it immune to exploitation. We forgo the
+          notion of negativity in relation to data privacy and give you the
+          reins to your assets."
+        </h2>
       <div
         className={`mt-[40px] md:mt-[70px] w-full md:max-w-[44rem]  lg:max-w-5xl mx-auto ${styles.paddingX1} flex flex-row items-start`}
       >

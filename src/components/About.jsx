@@ -45,14 +45,6 @@ function About() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <h2
-          className={`${styles.heroHead3Text}  text-black uppercase text-center`}
-        >
-          "Miyagi does not keep a trace of your data. Your assets are securely
-          stored decentrally making it immune to exploitation. We forgo the
-          notion of negativity in relation to data privacy and give you the
-          reins to your assets."
-        </h2>
       </motion.div>
     )}
 
