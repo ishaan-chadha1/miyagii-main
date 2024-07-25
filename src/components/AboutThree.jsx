@@ -97,43 +97,21 @@ function AboutThree() {
         src={box3}
         alt="box"
       />
-       <h2
-           style={{color:'black', textAlign:'center', fontSize:'25px'}}
-        >
+      <h2
+  style={{
+    color: 'black',
+    textAlign: 'center',
+    fontSize: '25px',
+    marginTop: '50px',
+    maxWidth: '80%',
+    margin: '0 auto'
+  }}
+>
           Miyagi does not keep a trace of your data. Your assets are securely
           stored decentrally making it immune to exploitation. We forgo the
           notion of negativity in relation to data privacy and give you the
           reins to your assets.
         </h2>
-      <div
-        className={`mt-[40px] md:mt-[70px] w-full md:max-w-[44rem]  lg:max-w-5xl mx-auto ${styles.paddingX1} flex flex-row items-start`}
-      >
-        <div className=" mx-auto flex flex-col gap-[2rem]">
-          <div
-            className={`text-center text-black text-[1rem] md:text-[1.2rem] font-normal leading-7 md:leading-7  capitalize`}
-          >
-            Miyagi Labs pioneers secure and tamper-proof blockchain-based
-            E-signatures, ensuring authenticity and trust in the digital
-            document signing process.
-          </div>
-          <div
-            className={`text-center text-black text-[1rem] md:text-[1.2rem] font-normal leading-7 md:leading-7  capitalize`}
-          >
-            Miyagi Labs distinguishes itself through a cost-effective and
-            premium blockchain-based E-signature solution, leveraging the
-            inherent advantages over centralized servers. Our platform delivers
-            cutting-edge E-signature capabilities that are both affordable and
-            of the highest quality, disrupting the traditional cost dynamics
-            associated with premium services.
-          </div>
-          <div className="text-center text-black text-[1rem] md:text-[1.2rem] font-normal leading-7 md:leading-7  capitalize">
-            Miyagi Labs stands as a beacon of innovation, offering businesses a
-            cost-effective yet premium alternative to traditional E-signature
-            solutions, with the added advantage of decentralization and enhanced
-            security over centralized counterparts.
-          </div>
-        </div>
-      </div>
     </section>
   );
 }
