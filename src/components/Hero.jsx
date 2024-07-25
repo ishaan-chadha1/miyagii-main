@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power1 } from "gsap";
 import { useEffect } from "react";
+import ScrollDownButton from './ScrollDownButton'; // Import the ScrollDownButton component
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,7 +19,6 @@ function Hero() {
       },
       x: -500,
       y: 200,
-
       ease: Power1,
       duration: 2,
     });
@@ -31,7 +31,6 @@ function Hero() {
       },
       x: -500,
       y: 200,
-
       ease: Power1,
       duration: 2,
     });
@@ -44,7 +43,6 @@ function Hero() {
       },
       x: 600,
       y: 200,
-
       ease: Power1,
       duration: 2,
     });
@@ -57,7 +55,6 @@ function Hero() {
       },
       x: 200,
       y: 200,
-
       ease: Power1,
       duration: 2,
     });
@@ -91,16 +88,11 @@ function Hero() {
       />
 
       <div className={` mx-auto ${styles.paddingX}`}>
-        
-          <h1
-            className={`${styles.heroHead2Text}  text-white uppercase text-center`}
-          >
-            <span className="text-black">
-              {"<"}Why <span className="text-[#5379FE]">MIYAGI</span>
-              {">"}
-            </span>
-          </h1>
-        
+        <h1 className={`${styles.heroHead2Text}  text-white uppercase text-center`}>
+          <span className="text-black">
+            {"<"}Why <span className="text-[#5379FE]">MIYAGI</span>{">"}
+          </span>
+        </h1>
       </div>
 
       <div
@@ -108,12 +100,12 @@ function Hero() {
       >
         <div className=" mx-auto flex flex-col gap-[2rem]">
           <div className="text-center text-[2.3rem]">
-          Unlike data storage providers who blatantly harvest
-your data “Legally” by barricading access to their
-application unless you accept sabotaging T&C’s
+            Unlike data storage providers who blatantly harvest your data “Legally” by barricading access to their application unless you accept sabotaging T&C’s
           </div>
         </div>
       </div>
+
+      <ScrollDownButton /> {/* Add the scroll down button here */}
     </section>
   );
 }
