@@ -26,7 +26,12 @@ const UploadPlans = () => {
       </button>
       <div className="flex flex-wrap justify-center">
         {uploadPlans.map((plan, index) => (
-          <div key={index} className="border shadow-sm w-full max-w-sm p-4 m-2 bg-blue-500 text-white rounded-lg transition-all duration-300 hover:bg-opacity-0 hover:text-blue-500" data-v0-t="card">
+          <div
+            key={index}
+            className="border shadow-sm w-full max-w-sm p-4 m-2 bg-blue-500 text-white rounded-lg transition-all duration-300 hover:bg-opacity-0 hover:text-blue-500 transform hover:rotate-3"
+            style={{ transition: 'transform 0.3s' }}
+            data-v0-t="card"
+          >
             <div className="flex flex-col space-y-1.5 p-6">
               <h3 className="whitespace-nowrap tracking-tight text-lg font-semibold">{plan.uploads} Uploads</h3>
               <p className="text-sm">{plan.description}</p>
