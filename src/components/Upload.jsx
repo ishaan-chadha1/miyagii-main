@@ -8,6 +8,7 @@ import { Power1 } from "gsap";
 import { useEffect, useState } from "react";
 import { uploadcard } from "..";
 import Tilt from 'react-parallax-tilt';
+import UploadPlans from "./UploadPlans";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -143,7 +144,7 @@ function Upload() {
         </div>
       </div>
 
-      <div
+      {/* <div
         className={`${styles.paddingX} mt-[2rem] md:mt-[5rem] flex flex-wrap justify-center gap-5`}
       >
        {uploadcard.map((subscriptiontype, index) => (
@@ -154,8 +155,9 @@ function Upload() {
                 handleBoxClick={handleBoxClick}
                 {...subscriptiontype}
               />
-            ))}
-      </div>
+            ))} 
+      </div> */}
+      <UploadPlans/>
     </section>
   );
 }
