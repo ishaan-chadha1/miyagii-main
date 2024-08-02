@@ -1,7 +1,7 @@
 .scrolldown {
-  --color: blue; /* Changed to olive green */
-  --sizeX: 40px; /* Increased size for emphasis */
-  --sizeY: 60px; /* Increased height */
+  --color: blue; 
+  --sizeX: 40px; 
+  --sizeY: 60px;
   position: relative;
   width: var(--sizeX);
   height: var(--sizeY);
