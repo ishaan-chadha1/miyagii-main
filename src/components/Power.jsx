@@ -119,27 +119,27 @@ function Power() {
 
         <div className="pb-[50px] xl:mr-[0rem] lg:pt-[50px] lg:pb-[50px] xl:pt-[120px] xl:pb-[120px] w-full lg:w-[55%] flex flex-col justify-between lg:flex-row items-center">
           <div className="w-[85%] md:p-6 text-center md:text-left">
-            <p className="w-full text-black text-[1.3rem] capitalize font-light mt-4 leading-7 tracking-wide">
+            <p className="w-full text-black text-[1.3rem]  font-light mt-4 leading-7 tracking-wide">
               "In a reality where your data is being exploited by tech giants
               for their ulterior motives, we equip you with the necessary tools
               to be different and fight back. Like John Lennon would say
             </p>
             <h1
               style={{ fontWeight: 1000 }}
-              className="w-full text-[1.9rem] uppercase font-normal pt-10"
+              className="w-full text-[1.9rem] uppercase font-normal pt-20 pb-20"
             >
               “POWER TO THE PEOPLE”
             </h1>
             <div className="flex flex-col gap-10">
-              <p className="w-full text-black text-[1.3rem] capitalize font-light mt-4 leading-7 tracking-wide">
+              <p className="w-full text-black text-[1.3rem] font-light mt-4 leading-7 tracking-wide">
                 Whether it's having an easy-to-use{" "}
                 <span className="text-black">Verification</span> and <br></br>
                 <span className="text-black">
-                  Timestamping platform for all your Documents
+                  Timestamping platform for all your Documents{" "}
                 </span>
                 or the sheer simplicity of{" "}
                 <span className="text-black">Decentralised Data Storage,</span>
-                we do it all and this is but the{" "}
+                {" "}we do it all and this is but the{" "}
                 <span className="text-black">tip of the iceberg</span>.
               </p>
              
