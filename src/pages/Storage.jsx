@@ -17,7 +17,7 @@ function Storage() {
     <StorageBanner/>
     <FeatureTwo/>
     {/* <StorageSubscription/> */}
-    <AboutThree/>
+    {/* <AboutThree/> */}
     <Contact/>
     <Footer/>
     </> );

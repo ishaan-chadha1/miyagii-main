@@ -9,6 +9,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power1 } from "gsap";
 import { useEffect } from "react";
+import AboutThree from "./AboutThree";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,30 +48,7 @@ function About() {
       >
       </motion.div>
     )}
-
-    <div
-      className={`w-full md:max-w-[44rem] lg:max-w-5xl mx-auto ${styles.paddingX1} flex flex-row items-start`}
-    >
-      <div className="mx-auto flex flex-col gap-[4rem]">
-        <div
-          className="text-center text-black text-[1.3rem] font-normal leading-7 md:leading-7 capitalize"
-        >
-          Try out Miyagi for free and let us know how you feel about it. Your
-          opinion matters to us. A long time ago, someone asked one of our
-          founders, “What does the user want?”. That simple yet complex
-          question still resonates with us and remains one of the core
-          philosophies of Miyagi. Your feedback adds to the landscape of
-          Miyagi and with your help, one day we would find the solution to
-          that resonating question.
-        </div>
-        <div className="text-center text-black text-[1.5rem] font-normal leading-7 md:leading-7 capitalize">
-          That simple yet complex question still resonates with us and remains
-          one of the core philosophies of Miyagi. Your feedback adds to the
-          landscape of Miyagi and with your help, one day we would find the
-          solution to that resonating question.
-        </div>
-      </div>
-    </div>
+     <AboutThree/>
   </section>
   );
 }
