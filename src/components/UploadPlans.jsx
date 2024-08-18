@@ -28,7 +28,7 @@ const UploadPlans = () => {
         {uploadPlans.map((plan, index) => (
           <div
             key={index}
-            className="border shadow-sm w-full max-w-sm p-4 m-2 bg-blue-500 text-white rounded-lg transition-all duration-300 hover:bg-opacity-0 hover:text-blue-500 transform hover:rotate-3"
+            className="border shadow-sm w-full max-w-sm p-4 m-2 bg-blue-500 text-white rounded-lg transition-all duration-300 hover:bg-opacity-0 hover:text-blue-500"
             style={{ transition: 'transform 0.3s' }}
             data-v0-t="card"
           >
