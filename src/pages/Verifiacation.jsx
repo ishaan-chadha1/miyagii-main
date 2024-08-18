@@ -5,6 +5,7 @@ import SubscriptionBanner from "../components/SubscriptionBanner";
 import Upload from "../components/Upload";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
+import Footer from "../components/Footer";
 
 function Verfiaction() {
   useEffect(() => {
@@ -54,6 +55,7 @@ function Verfiaction() {
         </div>
         <Contact />
       </div>
+      <Footer></Footer>
     </>
   );
 }
