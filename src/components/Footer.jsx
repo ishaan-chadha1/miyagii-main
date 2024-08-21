@@ -8,7 +8,7 @@ function Footer() {
     >
       <div className="flex flex-col text-center md:flex md:flex-row md:justify-between max-w-[80vw] mx-auto">
         <div className="text-white w-[100%] md:w-[60%] lg:w-[50%]">
-          <span className="pt-[4px]">@2023 All Rights Reserved</span>
+          <span className="pt-[4px]">@2024 All Rights Reserved</span>
         </div>
         <div className="text-white w-[100%] mt-4 md:mt-[0px] md:w-[45%] lg:w-[50%] xl:w-[25rem] flex flex-row justify-between">
           <div className="hidden lg:inline-block">
