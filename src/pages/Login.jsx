@@ -1,4 +1,3 @@
-// pages/LoginPage.js
 import React from "react";
 import AnimatedBackground from "../components/AnimatedBackground";
 
@@ -49,6 +48,8 @@ const styles = {
     fontSize: "4rem",
     fontWeight: "bold",
     letterSpacing: "0.2rem",
+    textShadow: "0 0 10px rgba(0, 0, 255, 0.5)", // Glow effect
+    // WebkitTextStroke: "2px #00f", // Blue outline
   },
   loginContainer: {
     flex: 1,
@@ -58,8 +59,9 @@ const styles = {
     justifyContent: "center",
     background: "rgba(0, 0, 0, 0.8)",
     padding: "2rem",
-    borderRadius: "8px",
-    width: "350px",
+    borderRadius: "12px",
+    width: "400px",
+    boxShadow: "0 0 15px rgba(255, 255, 255, 0.1)", // Subtle glow around the container
   },
   title: {
     color: "#fff",
