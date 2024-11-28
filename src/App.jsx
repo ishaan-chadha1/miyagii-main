@@ -10,6 +10,7 @@ import VerificationPricing from './pages/VerificationPricing';
 import Esign from './pages/Esign';
 import Pricing from './pages/Pricing';
 import EsignPricing from './pages/EsignPricing';
+import Login from './pages/Login';
 
 function App() {
   
@@ -26,6 +27,7 @@ function App() {
         <Route path="/esign" element={<Esign/>} />
         <Route path="/esign-pricing" element={<EsignPricing/>} />
         <Route path="/pricing" element={<Pricing/>} />
+        <Route path="/login" element={<Login/>} />
     </Routes>
   )
 }

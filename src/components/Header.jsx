@@ -150,8 +150,10 @@ const Header = () => {
           whileTap={{ scale: 0.9 }}
           transition={{ type: "spring", stiffness: 400, damping: 17}}
         >
-          <button className="min-w-[140px] font-poppins font-medium cursor-pointer text-[16px] rounded-xl border-2 p-2 text-white bg-[#5379FE] hover:w-[120px] hover:scale-95">
-            Login
+          <button
+      className="min-w-[140px] font-poppins font-medium cursor-pointer text-[16px] rounded-xl border-2 p-2 text-white bg-[#5379FE] hover:w-[120px] hover:scale-95"
+      onClick={() => navigate('/login')}
+    >Login
           </button>
         </motion.div>
       </div>
