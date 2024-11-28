@@ -1,32 +1,121 @@
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Believe from "../components/Believe";
-import Location from "../components/Location";
-import Footer from "../components/Footer";
-import Power from "../components/Power";
-import Graph from "../components/Graph";
-import { useEffect } from "react";
-import Comparison from "../components/Comparison";
-import PhilosophyCarousel from "../components/PhilosophyCarousel";
-import { PhilCards } from "../components/PhilCards";
+// pages/LoginPage.js
+import React from "react";
+import AnimatedBackground from "../components/AnimatedBackground";
 
-function Login() {
-    useEffect(()=>{
-        window.scrollTo(0, 0);
-    },[]);
-    return ( <>
-    <Header/>
-    <Hero/>
-    {/* <Power/> */}
-    <About/>
-    <Graph />
-    {/* <PhilCards /> */}
-    <Believe/>
-    <Comparison />
-    <Location/>
-    <Footer/>
-    </> );
-}
+const LoginPage = () => {
+  return (
+    <AnimatedBackground>
+      {/* Logo */}
+      <div style={styles.logoContainer}>
+        <h1 style={styles.logo}>MIYAGI</h1>
+      </div>
+      {/* Login Form */}
+      <div style={styles.loginContainer}>
+        <h2 style={styles.title}>Welcome</h2>
+        <p style={styles.subtitle}>Securely Log In and Get Started!</p>
+        <form style={styles.form}>
+          <input style={styles.input} type="text" placeholder="Username" />
+          <input
+            style={styles.input}
+            type="password"
+            placeholder="Password"
+          />
+          <button style={styles.button}>Login</button>
+          <button style={styles.googleButton}>Login With Google</button>
+        </form>
+        <div style={styles.links}>
+          <a href="/forgot-password" style={styles.link}>
+            Forgot Password?
+          </a>
+          <a href="/sign-up" style={styles.link}>
+            Sign-up Now
+          </a>
+        </div>
+      </div>
+    </AnimatedBackground>
+  );
+};
 
-export default Login;
+const styles = {
+  logoContainer: {
+    flex: 1,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    paddingLeft: "5rem",
+  },
+  logo: {
+    color: "#fff",
+    fontSize: "4rem",
+    fontWeight: "bold",
+    letterSpacing: "0.2rem",
+  },
+  loginContainer: {
+    flex: 1,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    background: "rgba(0, 0, 0, 0.8)",
+    padding: "2rem",
+    borderRadius: "8px",
+    width: "350px",
+  },
+  title: {
+    color: "#fff",
+    fontSize: "1.8rem",
+    marginBottom: "1rem",
+  },
+  subtitle: {
+    color: "#aaa",
+    fontSize: "1rem",
+    marginBottom: "2rem",
+  },
+  form: {
+    display: "flex",
+    flexDirection: "column",
+    width: "100%",
+  },
+  input: {
+    margin: "0.5rem 0",
+    padding: "0.8rem",
+    border: "1px solid #fff",
+    borderRadius: "4px",
+    fontSize: "1rem",
+    background: "transparent",
+    color: "#fff",
+  },
+  button: {
+    margin: "1rem 0",
+    padding: "0.8rem",
+    background: "#fff",
+    color: "#000",
+    border: "none",
+    borderRadius: "4px",
+    fontSize: "1rem",
+    cursor: "pointer",
+  },
+  googleButton: {
+    margin: "0.5rem 0",
+    padding: "0.8rem",
+    background: "#db4437",
+    border: "none",
+    borderRadius: "4px",
+    color: "#fff",
+    fontSize: "1rem",
+    cursor: "pointer",
+  },
+  links: {
+    marginTop: "1rem",
+    display: "flex",
+    justifyContent: "space-between",
+    width: "100%",
+  },
+  link: {
+    color: "#fff",
+    textDecoration: "none",
+    fontSize: "0.9rem",
+  },
+};
+
+export default LoginPage;
