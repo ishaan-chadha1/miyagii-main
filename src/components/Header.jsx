@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Header = () => {
   const navigate = useNavigate();
+  const location = useLocation(); // Get the current route
   const [dropdownOpen, setDropdownOpen] = useState(null); // To manage dropdown visibility
-  const [isLoginHovered, setIsLoginHovered] = useState(false); // To handle Login button hover state
+  const [hoveredButton, setHoveredButton] = useState(null); // Track hovered button
 
   // Handle dropdown toggling
   const openDropdown = (dropdown) => {
@@ -16,51 +17,46 @@ const Header = () => {
     setDropdownOpen(null);
   };
 
-  // Framer Motion Variants for Dropdown Animation
-  const dropdownVariants = {
-    hidden: {
-      opacity: 0,
-      scale: 0.95,
-      y: "-5%",
-    },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: "0%",
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 10,
-        mass: 0.75,
-      },
-    },
+  // Determine which button the oval should hover over based on the route
+  const getActiveButton = () => {
+    if (location.pathname === "/") return "login";
+    if (location.pathname === "/verify") return "verify";
+    return null;
   };
 
-  // Framer Motion Variants for Hover Animation on Items
-  const hoverVariants = {
-    hover: {
-      scale: 1.1,
-      color: "#5379FE", // Blue color on hover
-      transition: {
-        type: "spring",
-        stiffness: 300,
-      },
-    },
-  };
+  const activeButton = getActiveButton();
+
+  const renderButton = (text, id, onClick) => (
+    <div
+      style={{
+        ...styles.buttonContainer,
+        ...(activeButton === id && hoveredButton !== id ? styles.activeOval : {}),
+      }}
+      onMouseEnter={() => setHoveredButton(id)}
+      onMouseLeave={() => setHoveredButton(null)}
+    >
+      <motion.button
+        style={styles.button}
+        whileHover={{
+          scale: 1.1,
+          color: "#5379FE", // Blue text on hover
+        }}
+        onClick={onClick}
+      >
+        {text}
+      </motion.button>
+    </div>
+  );
 
   return (
     <nav style={styles.navbar}>
       <div style={styles.container}>
         {/* Logo */}
-        <motion.div
-          style={styles.logoContainer}
-          variants={hoverVariants}
-          // whileHover="hover"
-        >
+        <div style={styles.logoContainer}>
           <h1 style={styles.logo} onClick={() => navigate("/")}>
             MIYAGI
           </h1>
-        </motion.div>
+        </div>
 
         {/* Buttons Outline Container */}
         <div style={styles.buttonsOutline}>
@@ -72,31 +68,35 @@ const Header = () => {
           >
             <motion.button
               style={styles.button}
-              variants={hoverVariants}
-              whileHover="hover"
+              whileHover={{
+                scale: 1.1,
+                color: "#5379FE",
+              }}
             >
               Products
             </motion.button>
             {dropdownOpen === "products" && (
               <motion.div
                 style={styles.dropdownContent}
-                variants={dropdownVariants}
-                initial="hidden"
-                animate="visible"
-                exit="hidden"
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ type: "spring", stiffness: 200 }}
               >
                 <motion.button
                   style={styles.dropdownItem}
-                  variants={hoverVariants}
-                  whileHover="hover"
+                  whileHover={{
+                    color: "#5379FE",
+                  }}
                   onClick={() => navigate("/storage")}
                 >
                   Storage
                 </motion.button>
                 <motion.button
                   style={styles.dropdownItem}
-                  variants={hoverVariants}
-                  whileHover="hover"
+                  whileHover={{
+                    color: "#5379FE",
+                  }}
                   onClick={() => navigate("/verification")}
                 >
                   Verification
@@ -113,31 +113,35 @@ const Header = () => {
           >
             <motion.button
               style={styles.button}
-              variants={hoverVariants}
-              whileHover="hover"
+              whileHover={{
+                scale: 1.1,
+                color: "#5379FE",
+              }}
             >
               Subscription
             </motion.button>
             {dropdownOpen === "subscription" && (
               <motion.div
                 style={styles.dropdownContent}
-                variants={dropdownVariants}
-                initial="hidden"
-                animate="visible"
-                exit="hidden"
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ type: "spring", stiffness: 200 }}
               >
                 <motion.button
                   style={styles.dropdownItem}
-                  variants={hoverVariants}
-                  whileHover="hover"
+                  whileHover={{
+                    color: "#5379FE",
+                  }}
                   onClick={() => navigate("/storage-pricing")}
                 >
                   Storage Pricing
                 </motion.button>
                 <motion.button
                   style={styles.dropdownItem}
-                  variants={hoverVariants}
-                  whileHover="hover"
+                  whileHover={{
+                    color: "#5379FE",
+                  }}
                   onClick={() => navigate("/verification-pricing")}
                 >
                   Verification Pricing
@@ -146,35 +150,9 @@ const Header = () => {
             )}
           </div>
 
-          {/* Verify Now Button */}
-          <motion.button
-            style={styles.button}
-            variants={hoverVariants}
-            whileHover="hover"
-            onClick={() => navigate("/verify")}
-          >
-            Verify Now
-          </motion.button>
-
-          {/* Login Button */}
-          <div
-            style={{
-              ...styles.loginContainer,
-              ...(isLoginHovered ? { background: "transparent" } : { background: "#5379FE" }), // Oval visible when not hovered
-            }}
-          >
-            <motion.button
-              style={styles.loginButton}
-              onMouseEnter={() => setIsLoginHovered(true)}
-              onMouseLeave={() => setIsLoginHovered(false)}
-              whileHover={{
-                color: "#5379FE", // Blue text on hover
-              }}
-              onClick={() => navigate("/login")}
-            >
-              Login
-            </motion.button>
-          </div>
+          {/* Render Buttons */}
+          {renderButton("Verify Now", "verify", () => navigate("/verify"))}
+          {renderButton("Login", "login", () => navigate("/"))}
         </div>
       </div>
     </nav>
@@ -205,13 +183,12 @@ const styles = {
   logo: {
     fontSize: "1.8rem",
     fontWeight: "bold",
-    color: "blue", // Default black text
-    fontFamily: "'Cabin', sans-serif",
+    color: "#000", // Default black text
+    fontFamily: "'Roboto', sans-serif",
     letterSpacing: "0.05rem",
     cursor: "pointer",
   },
   buttonsOutline: {
-    background: "white",
     position: "relative",
     display: "flex",
     alignItems: "center",
@@ -232,22 +209,14 @@ const styles = {
     zIndex: 2,
     position: "relative",
   },
-  loginContainer: {
+  buttonContainer: {
     position: "relative",
     padding: "0.5rem 1rem",
     borderRadius: "50px",
     transition: "background 0.3s ease", // Smooth oval disappearance on hover
   },
-  loginButton: {
-    position: "relative",
-    background: "transparent",
-    color: "#fff", // Default white text
-    fontSize: "1rem",
-    fontWeight: "500",
-    border: "none",
-    cursor: "pointer",
-    zIndex: 2,
-    transition: "color 0.3s ease", // Smooth text color transition
+  activeOval: {
+    background: "#5379FE", // Blue oval for active button
   },
   dropdown: {
     position: "relative",

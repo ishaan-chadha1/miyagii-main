@@ -1,5 +1,6 @@
 import React from 'react';
 import {  Routes, Route } from "react-router-dom";
+import HomeOne from './pages/Homeone'
 import HomeTwo from './pages/HomeTwo';
 import Philosophy from './pages/Philosophy';
 import Subscription from './pages/Subscription';
@@ -29,6 +30,7 @@ function App() {
         <Route path="/esign-pricing" element={<EsignPricing/>} />
         <Route path="/pricing" element={<Pricing/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/verify" element={<HomeOne/>} />
     </Routes>
   )
 }
