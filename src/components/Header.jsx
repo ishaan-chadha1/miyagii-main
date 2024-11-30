@@ -39,7 +39,7 @@ const Header = () => {
         style={styles.button}
         whileHover={{
           scale: 1.1,
-          color: "#5379FE", // Blue text on hover
+          color: "#4B0082", // Dark purple text on hover
         }}
         onClick={onClick}
       >
@@ -70,7 +70,7 @@ const Header = () => {
               style={styles.button}
               whileHover={{
                 scale: 1.1,
-                color: "#5379FE",
+                color: "#4B0082", // Dark purple text on hover
               }}
             >
               Products
@@ -86,7 +86,7 @@ const Header = () => {
                 <motion.button
                   style={styles.dropdownItem}
                   whileHover={{
-                    color: "#5379FE",
+                    color: "#4B0082", // Dark purple text on hover
                   }}
                   onClick={() => navigate("/storage")}
                 >
@@ -95,7 +95,7 @@ const Header = () => {
                 <motion.button
                   style={styles.dropdownItem}
                   whileHover={{
-                    color: "#5379FE",
+                    color: "#4B0082", // Dark purple text on hover
                   }}
                   onClick={() => navigate("/verification")}
                 >
@@ -115,7 +115,7 @@ const Header = () => {
               style={styles.button}
               whileHover={{
                 scale: 1.1,
-                color: "#5379FE",
+                color: "#4B0082", // Dark purple text on hover
               }}
             >
               Subscription
@@ -131,7 +131,7 @@ const Header = () => {
                 <motion.button
                   style={styles.dropdownItem}
                   whileHover={{
-                    color: "#5379FE",
+                    color: "#4B0082", // Dark purple text on hover
                   }}
                   onClick={() => navigate("/storage-pricing")}
                 >
@@ -140,7 +140,7 @@ const Header = () => {
                 <motion.button
                   style={styles.dropdownItem}
                   whileHover={{
-                    color: "#5379FE",
+                    color: "#4B0082", // Dark purple text on hover
                   }}
                   onClick={() => navigate("/verification-pricing")}
                 >
@@ -181,10 +181,9 @@ const styles = {
     flex: 1,
   },
   logo: {
-    
     fontSize: "2rem",
     fontWeight: "bold",
-    color: "blue", 
+    color: "#5379FE", // Blue text for the logo
     fontFamily: "'Cabin', sans-serif",
     letterSpacing: "0.05rem",
     cursor: "pointer",
@@ -201,7 +200,7 @@ const styles = {
   },
   button: {
     background: "transparent",
-    color: "#000", // Default black text
+    color: "#5379FE", // Default blue text
     fontSize: "1rem",
     fontWeight: "500",
     padding: "0.5rem 1rem",
@@ -217,7 +216,7 @@ const styles = {
     transition: "background 0.3s ease", // Smooth oval disappearance on hover
   },
   activeOval: {
-    background: "#5379FE", // Blue oval for active button
+    background: "#ADD8E6",  // Blue oval for active button
   },
   dropdown: {
     position: "relative",
@@ -235,7 +234,7 @@ const styles = {
   dropdownItem: {
     padding: "0.5rem 1rem",
     background: "#fff",
-    color: "#000", // Default black text
+    color: "#5379FE", // Default blue text
     fontSize: "0.9rem",
     fontWeight: "500",
     border: "none",
