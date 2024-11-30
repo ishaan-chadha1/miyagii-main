@@ -205,8 +205,8 @@ const styles = {
   logo: {
     fontSize: "1.8rem",
     fontWeight: "bold",
-    color: "#000", // Default black text
-    fontFamily: "'Roboto', sans-serif",
+    color: "blue", // Default black text
+    fontFamily: "'Cabin', sans-serif",
     letterSpacing: "0.05rem",
     cursor: "pointer",
   },
