@@ -4,31 +4,30 @@ import AnimatedBackground from "../components/AnimatedBackground";
 const LoginPage = () => {
   return (
     <AnimatedBackground>
-      {/* Logo */}
-      <div style={styles.logoContainer}>
-        <h1 style={styles.logo}>MIYAGI</h1>
-      </div>
-      {/* Login Form */}
-      <div style={styles.loginContainer}>
-        <h2 style={styles.title}>Welcome</h2>
-        <p style={styles.subtitle}>Securely Log In and Get Started!</p>
-        <form style={styles.form}>
-          <input style={styles.input} type="text" placeholder="Username" />
-          <input
-            style={styles.input}
-            type="password"
-            placeholder="Password"
-          />
-          <button style={styles.button}>Login</button>
-          <button style={styles.googleButton}>Login With Google</button>
-        </form>
-        <div style={styles.links}>
-          <a href="/forgot-password" style={styles.link}>
-            Forgot Password?
-          </a>
-          <a href="/sign-up" style={styles.link}>
-            Sign-up Now
-          </a>
+      <div style={styles.container}>
+        {/* Left Section: Logo */}
+        <div style={styles.logoContainer}>
+          <h1 style={styles.logo}>MIYAGI</h1>
+        </div>
+
+        {/* Right Section: Login Form */}
+        <div style={styles.loginContainer}>
+          <h2 style={styles.title}>Welcome</h2>
+          <p style={styles.subtitle}>Securely Log In and Get Started!</p>
+          <form style={styles.form}>
+            <input style={styles.input} type="text" placeholder="Username" />
+            <input style={styles.input} type="password" placeholder="Password" />
+            <button style={styles.button}>Login</button>
+            <button style={styles.googleButton}>Login With Google</button>
+          </form>
+          <div style={styles.links}>
+            <a href="/forgot-password" style={styles.link}>
+              Forgot Password?
+            </a>
+            <a href="/sign-up" style={styles.link}>
+              Sign-up Now
+            </a>
+          </div>
         </div>
       </div>
     </AnimatedBackground>
@@ -36,20 +35,28 @@ const LoginPage = () => {
 };
 
 const styles = {
+  container: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    width: "100%",
+    height: "100%",
+    padding: "0 5rem",
+  },
   logoContainer: {
     flex: 1,
     display: "flex",
     alignItems: "center",
-    justifyContent: "flex-start",
-    paddingLeft: "5rem",
+    justifyContent: "center",
+    paddingRight: "2rem",
   },
   logo: {
     color: "#fff",
     fontSize: "4rem",
     fontWeight: "bold",
     letterSpacing: "0.2rem",
-    textShadow: "0 0 10px rgba(0, 0, 255, 0.5)", // Glow effect
-    // WebkitTextStroke: "2px #00f", // Blue outline
+    textShadow: "0 0 10px rgba(0, 0, 255, 0.5)",
+    textAlign: "center",
   },
   loginContainer: {
     flex: 1,
@@ -60,8 +67,8 @@ const styles = {
     background: "rgba(0, 0, 0, 0.8)",
     padding: "2rem",
     borderRadius: "12px",
-    width: "400px",
-    boxShadow: "0 0 15px rgba(255, 255, 255, 0.1)", // Subtle glow around the container
+    maxWidth: "400px",
+    boxShadow: "0 0 15px rgba(255, 255, 255, 0.1)",
   },
   title: {
     color: "#fff",
@@ -72,6 +79,7 @@ const styles = {
     color: "#aaa",
     fontSize: "1rem",
     marginBottom: "2rem",
+    textAlign: "center",
   },
   form: {
     display: "flex",
@@ -90,22 +98,24 @@ const styles = {
   button: {
     margin: "1rem 0",
     padding: "0.8rem",
-    background: "#fff",
-    color: "#000",
+    background: "#000", // Black background
+    color: "#fff", // White text
     border: "none",
     borderRadius: "4px",
     fontSize: "1rem",
     cursor: "pointer",
+    transition: "background 0.3s ease",
   },
   googleButton: {
     margin: "0.5rem 0",
     padding: "0.8rem",
-    background: "#db4437",
-    border: "none",
+    background: "#000", // Black background
+    color: "#0000ff", // Blue text
+    border: "1px solid #0000ff", // Blue border for consistency
     borderRadius: "4px",
-    color: "#fff",
     fontSize: "1rem",
     cursor: "pointer",
+    transition: "background 0.3s ease, color 0.3s ease",
   },
   links: {
     marginTop: "1rem",

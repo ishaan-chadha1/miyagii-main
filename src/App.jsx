@@ -18,6 +18,7 @@ function App() {
   return (
     <Routes>
         <Route path="/" element={<HomeTwo/>} />
+        <Route path="/home" element={<HomeTwo/>} />
         <Route path="/philosophy" element={<Philosophy/>} />   
         <Route path="/subscription" element={<Subscription/>} />
         <Route path="/storage" element={<Storage/>} />

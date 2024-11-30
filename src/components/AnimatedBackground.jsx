@@ -3,8 +3,13 @@ import React from "react";
 const AnimatedBackground = ({ children }) => {
   return (
     <div style={styles.background}>
-      <div style={styles.oval1}></div>
-      <div style={styles.oval2}></div>
+      {/* Oval 1 */}
+      <div id="oval1" style={styles.oval1}></div>
+
+      {/* Oval 2 */}
+      <div id="oval2" style={styles.oval2}></div>
+
+      {/* Overlay */}
       <div style={styles.overlay}>{children}</div>
     </div>
   );
@@ -25,43 +30,44 @@ const styles = {
     width: "100%",
     height: "100%",
     display: "flex",
+    flexDirection: "column",
     alignItems: "center",
-    justifyContent: "space-between",
-    padding: "0 5rem",
-    zIndex: 2, // Content above background
+    justifyContent: "center",
+    zIndex: 2,
+    padding: "1rem",
   },
   oval1: {
     position: "absolute",
-    width: "600px",
+    width: "600px", // Increased size
     height: "600px",
     background: "radial-gradient(circle, rgba(93, 56, 185, 0.7), transparent 60%)",
     borderRadius: "50%",
     top: "-200px",
-    left: "0", // Start at the left edge
-    animation: "moveOval1 8s ease-in-out infinite",
-    zIndex: 1, // Behind content
+    left: "5%",
+    animation: "moveOval1 10s ease-in-out infinite",
+    zIndex: 1,
   },
   oval2: {
     position: "absolute",
-    width: "600px",
-    height: "600px",
+    width: "500px", // Increased size
+    height: "500px",
     background: "radial-gradient(circle, rgba(80, 0, 200, 0.6), transparent 60%)",
     borderRadius: "50%",
-    bottom: "-250px",
-    right: "0", // Start at the right edge
-    animation: "moveOval2 8s ease-in-out infinite",
-    zIndex: 1, // Behind content
+    bottom: "-200px",
+    right: "5%",
+    animation: "moveOval2 12s ease-in-out infinite",
+    zIndex: 1,
   },
 };
 
-// Updated animations for full-screen movement
+// Adding keyframes dynamically
 const styleSheet = document.styleSheets[0];
 styleSheet.insertRule(
   `
   @keyframes moveOval1 {
-    0% { transform: translateX(0); } /* Start at the left edge */
-    50% { transform: translateX(100vw); } /* Move fully to the right */
-    100% { transform: translateX(0); } /* Return to the left */
+    0% { transform: translate(-20vw, 0) scale(1); }
+    50% { transform: translate(20vw, 20vh) scale(0.5); } /* Reduce to half size */
+    100% { transform: translate(-20vw, 0) scale(1); }
   }
 `,
   styleSheet.cssRules.length
@@ -70,9 +76,9 @@ styleSheet.insertRule(
 styleSheet.insertRule(
   `
   @keyframes moveOval2 {
-    0% { transform: translateX(0); } /* Start at the right edge */
-    50% { transform: translateX(-100vw); } /* Move fully to the left */
-    100% { transform: translateX(0); } /* Return to the right */
+    0% { transform: translate(20vw, 0) scale(1); }
+    50% { transform: translate(-20vw, -20vh) scale(0.5); } /* Reduce to half size */
+    100% { transform: translate(20vw, 0) scale(1); }
   }
 `,
   styleSheet.cssRules.length
