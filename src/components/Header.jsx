@@ -152,7 +152,7 @@ const Header = () => {
 
           {/* Render Buttons */}
           {renderButton("Verify Now", "verify", () => navigate("/verify"))}
-          {renderButton("Login", "login", () => navigate("/"))}
+          {renderButton("Login", "login", () => navigate("/login"))}
         </div>
       </div>
     </nav>

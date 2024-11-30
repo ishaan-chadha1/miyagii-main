@@ -1,6 +1,6 @@
 import React from 'react';
 import {  Routes, Route } from "react-router-dom";
-import HomeOne from './pages/Homeone'
+import HomeOne from './pages/Homeone';
 import HomeTwo from './pages/HomeTwo';
 import Philosophy from './pages/Philosophy';
 import Subscription from './pages/Subscription';
@@ -12,6 +12,7 @@ import Esign from './pages/Esign';
 import Pricing from './pages/Pricing';
 import EsignPricing from './pages/EsignPricing';
 import Login from './pages/Login';
+import Verify from './pages/Verify';
 
 function App() {
   
@@ -30,7 +31,7 @@ function App() {
         <Route path="/esign-pricing" element={<EsignPricing/>} />
         <Route path="/pricing" element={<Pricing/>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/verify" element={<HomeOne/>} />
+        <Route path="/verify" element={<Verify/>} />
     </Routes>
   )
 }
