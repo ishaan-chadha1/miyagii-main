@@ -181,10 +181,11 @@ const styles = {
     flex: 1,
   },
   logo: {
-    fontSize: "1.8rem",
+    
+    fontSize: "2rem",
     fontWeight: "bold",
-    color: "#000", // Default black text
-    fontFamily: "'Roboto', sans-serif",
+    color: "blue", 
+    fontFamily: "'Cabin', sans-serif",
     letterSpacing: "0.05rem",
     cursor: "pointer",
   },
