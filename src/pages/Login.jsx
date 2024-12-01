@@ -1,9 +1,11 @@
 import React from "react";
 import AnimatedBackground from "../components/AnimatedBackground";
+import Header from "../components/Header";
 
 const LoginPage = () => {
   return (
     <AnimatedBackground>
+      <Header /> {/* Render the Header component */}
       <div style={styles.container}>
         {/* Left Section: Logo */}
         <div style={styles.logoContainer}>
@@ -41,7 +43,7 @@ const styles = {
     justifyContent: "space-between",
     width: "100%",
     height: "100%",
-    padding: "0 5rem",
+    padding: "8rem 5rem 5rem", // Increased top padding to move login container down
   },
   logoContainer: {
     flex: 1,
