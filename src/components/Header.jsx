@@ -146,6 +146,15 @@ const Header = () => {
                 >
                   Verification Pricing
                 </motion.button>
+                <motion.button
+        style={styles.dropdownItem}
+        whileHover={{
+          color: "#4B0082", // Dark purple text on hover
+        }}
+        onClick={() => navigate("/esign-pricing")}
+      >
+        Esign Pricing
+      </motion.button>
               </motion.div>
             )}
           </div>
