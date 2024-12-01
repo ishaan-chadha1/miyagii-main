@@ -165,7 +165,7 @@ const styles = {
     top: 0,
     width: "100%",
     background: "transparent", // Fully transparent background
-    padding: "1rem 2rem",
+    padding: "0.5rem 2rem", // Reduced padding to decrease overall height
     zIndex: 1000,
     display: "flex",
     justifyContent: "center",
@@ -181,7 +181,7 @@ const styles = {
     flex: 1,
   },
   logo: {
-    fontSize: "2rem",
+    fontSize: "1.8rem", // Slightly reduced font size for the logo
     fontWeight: "bold",
     color: "#5379FE", // Blue text for the logo
     fontFamily: "'Cabin', sans-serif",
@@ -192,18 +192,20 @@ const styles = {
     position: "relative",
     display: "flex",
     alignItems: "center",
-    padding: "0.5rem",
+    justifyContent: "space-between", // Ensure buttons are spaced properly
+    padding: "0.4rem",
     border: "2px solid #5379FE", // Blue outline container
     borderRadius: "50px",
-    gap: "1.5rem",
-    justifyContent: "space-between",
-  },
+    gap: "0.8rem",
+    maxWidth: "450px", // Adjusted maximum width for the container
+    marginLeft: "auto", // Aligns the container to the right
+},
   button: {
     background: "transparent",
     color: "#5379FE", // Default blue text
-    fontSize: "1rem",
+    fontSize: "0.9rem", // Slightly reduced font size for buttons
     fontWeight: "500",
-    padding: "0.5rem 1rem",
+    padding: "0.4rem 0.8rem", // Reduced padding for smaller button height
     border: "none",
     cursor: "pointer",
     zIndex: 2,
@@ -211,19 +213,19 @@ const styles = {
   },
   buttonContainer: {
     position: "relative",
-    padding: "0.5rem 1rem",
+    padding: "0.4rem 0.8rem", // Reduced padding for the button container
     borderRadius: "50px",
     transition: "background 0.3s ease", // Smooth oval disappearance on hover
   },
   activeOval: {
-    background: "#ADD8E6",  // Blue oval for active button
+    background: "#ADD8E6", // Blue oval for active button
   },
   dropdown: {
     position: "relative",
   },
   dropdownContent: {
     position: "absolute",
-    top: "2.5rem",
+    top: "2rem", // Adjusted dropdown position to fit the reduced header height
     left: 0,
     background: "#fff",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
@@ -232,7 +234,7 @@ const styles = {
     overflow: "hidden",
   },
   dropdownItem: {
-    padding: "0.5rem 1rem",
+    padding: "0.4rem 1rem", // Reduced padding for dropdown items
     background: "#fff",
     color: "#5379FE", // Default blue text
     fontSize: "0.9rem",
@@ -244,5 +246,6 @@ const styles = {
     transition: "background 0.2s ease, color 0.2s ease",
   },
 };
+
 
 export default Header;
