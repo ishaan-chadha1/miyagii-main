@@ -11,47 +11,55 @@ const plans = [
 ];
 
 const StoragePlans = () => {
-  const [selectedPeriod, setSelectedPeriod] = useState('monthly');
-  const [currency, setCurrency] = useState('usd');
+  const [selectedPeriod, setSelectedPeriod] = useState("monthly");
+  const [currency, setCurrency] = useState("usd");
 
   const handlePeriodChange = (period) => {
     setSelectedPeriod(period);
   };
 
   const handleCurrencyToggle = () => {
-    setCurrency(currency === 'usd' ? 'inr' : 'usd');
+    setCurrency(currency === "usd" ? "inr" : "usd");
   };
 
   return (
     <div className="flex flex-col items-center p-4 space-y-6">
-      <h1 className="text-3xl font-bold">Storage Plans</h1>
-      <div className="flex space-x-4 items-center">
-        <button onClick={() => handlePeriodChange('monthly')} className={`inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ${selectedPeriod === 'monthly' ? 'bg-blue-500 text-white' : 'border border-input bg-background hover:bg-accent hover:text-accent-foreground'} h-10 px-4 py-2`}>
-          Monthly
-        </button>
-        <button onClick={() => handlePeriodChange('yearly')} className={`inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ${selectedPeriod === 'yearly' ? 'bg-blue-500 text-white' : 'border border-input bg-background hover:bg-accent hover:text-accent-foreground'} h-10 px-4 py-2`}>
-          Yearly
-        </button>
-        <button onClick={() => handlePeriodChange('sixYears')} className={`inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ${selectedPeriod === 'sixYears' ? 'bg-blue-500 text-white' : 'border border-input bg-background hover:bg-accent hover:text-accent-foreground'} h-10 px-4 py-2`}>
-          Six Yearly
-        </button>
-        <button onClick={() => handlePeriodChange('forever')} className={`inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ${selectedPeriod === 'forever' ? 'bg-blue-500 text-white' : 'border border-input bg-background hover:bg-accent hover:text-accent-foreground'} h-10 px-4 py-2`}>
-          Forever
-        </button>
-        <button onClick={handleCurrencyToggle} className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
-          {currency === 'usd' ? '$' : '₹'}
+      <div className="flex space-x-4 items-center pt-10 pb-10">
+        {["monthly", "yearly", "sixYears", "forever"].map((period) => (
+          <button
+            key={period}
+            onClick={() => handlePeriodChange(period)}
+            className={`inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors ${
+              selectedPeriod === period
+                ? "bg-blue-500 text-white"
+                : "text-white border border-white hover:text-blue-500 hover:border-blue-500"
+            } h-10 px-4 py-2`}
+          >
+            {period.charAt(0).toUpperCase() + period.slice(1)}
+          </button>
+        ))}
+        <button
+          onClick={handleCurrencyToggle}
+          className="inline-flex items-center justify-center rounded-md text-sm font-medium text-white border border-white hover:text-blue-500 hover:border-blue-500 h-10 px-4 py-2"
+        >
+          {currency === "usd" ? "$" : "₹"}
         </button>
       </div>
-      <div className="flex flex-wrap justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {plans.map((plan) => (
-          <div key={plan.name} className="border shadow-sm w-full max-w-sm p-4 m-2 bg-blue-500 text-white rounded-lg transition-all duration-300 hover:bg-opacity-0 hover:text-blue-500" data-v0-t="card">
-            <div className="flex flex-col space-y-1.5 p-6">
-              <h3 className="whitespace-nowrap tracking-tight text-lg font-semibold">{plan.name}</h3>
-              <p className="text-sm text-muted-foreground">{plan.description}</p>
+          <div
+            key={plan.name}
+            className="border shadow-lg w-[375px] h-[225px] p-8 bg-blue-500 text-white rounded-lg transition-all duration-300 hover:bg-opacity-0 hover:text-blue-500"
+          >
+            <div className="flex flex-col space-y-2">
+              <h3 className="tracking-tight text-lg font-semibold">
+                {plan.name}
+              </h3>
+              <p className="text-sm">{plan.description}</p>
               <p className="text-xs">{plan.info}</p>
             </div>
-            <div className="p-6 space-y-2">
-              <div className="flex justify-between">
+            <div className="mt-4 space-y-2">
+              <div className="flex justify-between pt-10">
                 <span>Price</span>
                 <span>{plan.prices[selectedPeriod][currency]}</span>
               </div>
