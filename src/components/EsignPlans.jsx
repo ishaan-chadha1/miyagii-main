@@ -29,11 +29,11 @@ const EsignPlans = () => {
             key={index}
             className="border shadow-sm w-[375px] h-[225px] p-4 bg-blue-500 text-white rounded-lg transition-all duration-300 hover:bg-opacity-0 hover:text-blue-500"
           >
-            <div className="flex flex-col space-y-1.5 p-4">
+            <div className="flex flex-col space-y-1.5 p-6">
               <h3 className="whitespace-nowrap tracking-tight text-lg font-semibold">{plan.esigns} E-signs</h3>
               <p className="text-sm">{plan.description}</p>
             </div>
-            <div className="p-4 space-y-2">
+            <div className="p-6 space-y-2">
               <div className="flex justify-between">
                 <span>Price</span>
                 <span>{currency === "usd" ? plan.priceInUsd : plan.priceInInr}</span>
