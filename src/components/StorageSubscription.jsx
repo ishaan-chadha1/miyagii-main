@@ -9,8 +9,8 @@ function StorageSubscription() {
         {/* Storage Plans Section */}
         <div className="flex flex-col items-center pt-20 ">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white uppercase leading-tight">
-           <span>Storage</span> <span> </span> 
-          <span className="text-blue-500">Plans</span>
+           <span>BLOCKCHain Based </span> <span> </span> 
+          <span className="text-blue-500"> Storage Plans</span>
         </h2>
           <StoragePlans />
         </div>
