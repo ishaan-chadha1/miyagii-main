@@ -1,28 +1,23 @@
-import Contact from "../components/Contact";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
-import { NavLink } from "react-router-dom";
-import { useEffect } from "react";
+import AnimatedBackground from "../components/AnimatedBackground";
 import Upload from "../components/Upload";
 
 function VerificationPricing() {
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0);
-},[]);
+  }, []);
+
   return (
-    <>
+    <AnimatedBackground>
       <Header />
-      <div className="mt-[10rem] md:mt-[0rem]">
-        <Upload />
-        {/* <div className="w-full flex justify-center">
-          <NavLink to="/subscription">
-            <button className="p-2 rounded-lg text-white bg-[#5379FE] text-[15px] font-thin">
-              pricing of the products
-            </button>
-          </NavLink>
-        </div> */}
-        <Contact />
+      <div className="min-h-screen flex flex-col justify-start overflow-y-auto">
+        {/* Add padding to prevent overlap */}
+        <div className="pt-[8rem] pb-[4rem]">
+          <Upload />
+        </div>
       </div>
-    </>
+    </AnimatedBackground>
   );
 }
 
