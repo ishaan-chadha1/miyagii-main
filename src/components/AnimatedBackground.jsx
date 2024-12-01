@@ -38,26 +38,26 @@ const styles = {
   },
   oval1: {
     position: "absolute",
-    width: "600px", // Increased size
-    height: "600px",
+    width: "1000px", // Increased size
+    height: "1000px",
     background: "radial-gradient(circle, rgba(93, 56, 185, 0.7), transparent 60%)",
     borderRadius: "50%",
-    top: "-200px",
+    top: "-300px",
     left: "5%",
     animation: "moveOval1 10s ease-in-out infinite",
     zIndex: 1,
   },
   oval2: {
     position: "absolute",
-    width: "500px", // Increased size
-    height: "500px",
+    width: "800px", // Increased size
+    height: "800px",
     background: "radial-gradient(circle, rgba(80, 0, 200, 0.6), transparent 60%)",
     borderRadius: "50%",
-    bottom: "-200px",
+    bottom: "-300px",
     right: "5%",
     animation: "moveOval2 12s ease-in-out infinite",
     zIndex: 1,
-  },
+  },  
 };
 
 // Adding keyframes dynamically
