@@ -208,7 +208,7 @@ const styles = {
     gap: "0.8rem",
     maxWidth: "450px",
     marginLeft: "auto",
-    background: "rgba(0, 0, 0, 0.1)", // Half-transparent black background
+    background: "rgba(0, 0, 0, 0.01)", // Half-transparent black background
     backdropFilter: "blur(5px)", // Add blur effect
   },
   button: {
