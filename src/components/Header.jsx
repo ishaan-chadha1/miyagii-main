@@ -147,14 +147,14 @@ const Header = () => {
                   Verification Pricing
                 </motion.button>
                 <motion.button
-        style={styles.dropdownItem}
-        whileHover={{
-          color: "#4B0082", // Dark purple text on hover
-        }}
-        onClick={() => navigate("/esign-pricing")}
-      >
-        Esign Pricing
-      </motion.button>
+                  style={styles.dropdownItem}
+                  whileHover={{
+                    color: "#4B0082", // Dark purple text on hover
+                  }}
+                  onClick={() => navigate("/esign-pricing")}
+                >
+                  Esign Pricing
+                </motion.button>
               </motion.div>
             )}
           </div>
@@ -174,7 +174,7 @@ const styles = {
     top: 0,
     width: "100%",
     background: "transparent", // Fully transparent background
-    padding: "0.5rem 2rem", // Reduced padding to decrease overall height
+    padding: "0.5rem 2rem",
     zIndex: 1000,
     display: "flex",
     justifyContent: "center",
@@ -190,9 +190,9 @@ const styles = {
     flex: 1,
   },
   logo: {
-    fontSize: "1.8rem", // Slightly reduced font size for the logo
+    fontSize: "1.8rem",
     fontWeight: "bold",
-    color: "#5379FE", // Blue text for the logo
+    color: "#5379FE",
     fontFamily: "'Cabin', sans-serif",
     letterSpacing: "0.05rem",
     cursor: "pointer",
@@ -201,20 +201,22 @@ const styles = {
     position: "relative",
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between", // Ensure buttons are spaced properly
+    justifyContent: "space-between",
     padding: "0.4rem",
-    border: "2px solid #5379FE", // Blue outline container
+    border: "2px solid #5379FE",
     borderRadius: "50px",
     gap: "0.8rem",
-    maxWidth: "450px", // Adjusted maximum width for the container
-    marginLeft: "auto", // Aligns the container to the right
-},
+    maxWidth: "450px",
+    marginLeft: "auto",
+    background: "rgba(0, 0, 0, 0.1)", // Half-transparent black background
+    backdropFilter: "blur(5px)", // Add blur effect
+  },
   button: {
     background: "transparent",
-    color: "#5379FE", // Default blue text
-    fontSize: "0.9rem", // Slightly reduced font size for buttons
+    color: "#5379FE",
+    fontSize: "0.9rem",
     fontWeight: "500",
-    padding: "0.4rem 0.8rem", // Reduced padding for smaller button height
+    padding: "0.4rem 0.8rem",
     border: "none",
     cursor: "pointer",
     zIndex: 2,
@@ -222,19 +224,19 @@ const styles = {
   },
   buttonContainer: {
     position: "relative",
-    padding: "0.4rem 0.8rem", // Reduced padding for the button container
+    padding: "0.4rem 0.8rem",
     borderRadius: "50px",
-    transition: "background 0.3s ease", // Smooth oval disappearance on hover
+    transition: "background 0.3s ease",
   },
   activeOval: {
-    background: "#ADD8E6", // Blue oval for active button
+    background: "#ADD8E6",
   },
   dropdown: {
     position: "relative",
   },
   dropdownContent: {
     position: "absolute",
-    top: "2rem", // Adjusted dropdown position to fit the reduced header height
+    top: "2rem",
     left: 0,
     background: "#fff",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
@@ -243,9 +245,9 @@ const styles = {
     overflow: "hidden",
   },
   dropdownItem: {
-    padding: "0.4rem 1rem", // Reduced padding for dropdown items
+    padding: "0.4rem 1rem",
     background: "#fff",
-    color: "#5379FE", // Default blue text
+    color: "#5379FE",
     fontSize: "0.9rem",
     fontWeight: "500",
     border: "none",
@@ -255,6 +257,5 @@ const styles = {
     transition: "background 0.2s ease, color 0.2s ease",
   },
 };
-
 
 export default Header;
