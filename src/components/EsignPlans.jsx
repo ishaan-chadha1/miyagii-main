@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { motion } from "framer-motion"; 
 const esignPlans = [
   { esigns: "10", description: "Ideal for personal use.", priceInInr: "₹100", priceInUsd: "$1.11" },
   { esigns: "100", description: "Perfect for small teams.", priceInInr: "₹800", priceInUsd: "$8.88" },
@@ -11,18 +11,36 @@ const esignPlans = [
 const EsignPlans = () => {
   const [currency, setCurrency] = useState("inr");
 
-  const handleCurrencyToggle = () => {
-    setCurrency(currency === "usd" ? "inr" : "usd");
-  };
-
   return (
     <div className="flex flex-col items-center p-4 space-y-6">
-      <button
-        onClick={handleCurrencyToggle}
-        className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium border border-white text-white bg-transparent hover:bg-blue-500 hover:text-black h-10 px-4 py-2 transition-transform duration-300 transform hover:scale-105"
-      >
-        {currency === "usd" ? "$" : "₹"}
-      </button>
+      {/* Animated Currency Toggle */}
+      <div className="relative flex items-center gap-4 px-4 py-2 rounded-full bg-gray-800 w-[300px]">
+        <motion.div
+          className="absolute inset-0 h-full bg-white rounded-full"
+          style={{ width: "50%" }}
+          animate={{
+            left: currency === "usd" ? "50%" : "0%",
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 500,
+            damping: 30,
+          }}
+        />
+        {["inr", "usd"].map((curr) => (
+          <button
+            key={curr}
+            onClick={() => setCurrency(curr)}
+            className={`relative z-10 flex items-center justify-center w-[50%] h-[40px] text-base font-semibold transition-all ${
+              currency === curr ? "text-blue-500" : "text-white"
+            }`}
+          >
+            {curr.toUpperCase()}
+          </button>
+        ))}
+      </div>
+
+      {/* Esign Plans */}
       <div className="flex flex-wrap justify-center gap-6">
         {esignPlans.map((plan, index) => (
           <div
