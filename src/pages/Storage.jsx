@@ -15,10 +15,7 @@ function Storage() {
     return ( <>
     <Header/>
     <StorageBanner/>
-    <FeatureTwo/>
-    {/* <StorageSubscription/> */}
-    {/* <AboutThree/> */}
-    <Contact/>
+
     <Footer/>
     </> );
 }

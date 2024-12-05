@@ -1,60 +1,26 @@
 import { styles } from "../styles";
 import { useInView } from "react-intersection-observer";
-import { NavLink } from "react-router-dom";
-import gsap from "gsap";
-import Tilt from 'react-parallax-tilt';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { featurecardtwo } from "..";
 
-gsap.registerPlugin(ScrollTrigger);
-
 function FeatureCardTwo({ Image, heading, content, index, Image1 }) {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
   return (
-    <Tilt>
     <div
       key={index}
-      className="activeBox"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      className="w-[300px] h-[400px] p-6 bg-blue-500 bg-opacity-80 text-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
     >
-      <div className="inneractiveBox flex flex-col w-[280px] h-[390px] md:h-[455px] rounded-3xl shadow border border-slate-200 p-6 gap-3 md:gap-4">
-        <div className="featured-image w-[100px] h-[100px] bg-blue-500 rounded-[20px]">
+      <div className="flex flex-col items-center">
+        <div className="w-[80px] h-[80px] bg-white rounded-full flex items-center justify-center mb-4">
           <img
-            className={`feature-image ${isHovered ? "hidden" : ""}`}
+            className="w-[60px] h-[60px]"
             src={Image}
-            alt=""
-          />
-          <img
-            className={`feature-image1 ${isHovered ? "" : "hidden"}`}
-            src={Image1}
-            alt=""
+            alt="Icon"
           />
         </div>
-        
-        <div>
-          <h1 className=" text-[20px] md:text-[25px] font-normal uppercase">
-            {heading}
-          </h1>
-        </div>
-        <div>
-          <p className="w-full text-[0.9rem] md:text-[1rem] font-thin capitalize leading-6 md:leading-7">
-            {content}
-          </p>
-        </div>
+        <h3 className="text-xl font-semibold mb-2 text-center">{heading}</h3>
+        <p className="text-sm text-center">{content}</p>
       </div>
     </div>
-    </Tilt>
   );
 }
 
@@ -68,27 +34,16 @@ function FeatureTwo() {
 
   return (
     <section
-      className={`trigger1 w-full xl:min-h-[60vh] relative mx-auto`}
+      className="trigger1 w-full relative mx-auto flex flex-col items-center justify-center py-12"
       ref={ref}
     >
       {inView && (
-        <div
-          className={`pb-[10vh] w-5xl mx-auto ${styles.paddingX} items-start lg:w-[100vw]`}
-        >
-          <div className="w-full flex flex-wrap justify-center gap-6">
-            {featurecardtwo.map((feature, index) => (
-              <FeatureCardTwo key={index} index={index} {...feature} />
-            ))}
-          </div>
+        <div className="pb-12 w-full max-w-7xl mx-auto flex flex-wrap justify-center gap-6">
+          {featurecardtwo.map((feature, index) => (
+            <FeatureCardTwo key={index} index={index} {...feature} />
+          ))}
         </div>
-      )}{" "}
-       <div className="w-full flex justify-center">
-       <button class="cursor-pointer text-white relative text-[14px] w-[10em] h-[3em] text-center bg-gradient-to-r from-blue-500 from-10% via-blue-600 via-30% to-blue-700 to-90% bg-[length:400%] rounded-md z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[2px] before:-bottom-[2px] before:-left-[2px] before:-right-[2px] before:bg-gradient-to-r before:from-blue-500 before:from-10% before:via-blue-600 before:via-30% before:to-blue-700 before:bg-[length:400%] before:-z-10 before:rounded-md before:hover:blur-sm before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:100%] active:bg-blue-800 focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-    Pricing of Products
-</button>
-
-
-</div>
+      )}
     </section>
   );
 }
