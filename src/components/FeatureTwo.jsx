@@ -39,11 +39,11 @@ function FeatureTwo() {
 
   return (
     <section
-      className="trigger1 w-full relative mx-auto flex flex-col items-center justify-center py-12"
+      className="trigger1 w-full relative mx-auto flex flex-col items-center justify-center py-12 px-4"
       ref={ref}
     >
       {inView && (
-        <div className="pb-12 w-full max-w-7xl mx-auto flex flex-wrap justify-center gap-8">
+        <div className="pb-12 w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {featurecardtwo.map((feature, index) => (
             <FeatureCardTwo key={index} index={index} {...feature} />
           ))}
