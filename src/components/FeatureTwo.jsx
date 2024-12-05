@@ -6,10 +6,10 @@ function FeatureCardTwo({ heading, content, index }) {
   return (
     <div
       key={index}
-      className="w-[280px] md:w-[300px] h-[420px] p-6 bg-black text-white border border-blue-500 rounded-lg shadow-lg relative overflow-hidden group"
+      className="w-[280px] md:w-[300px] h-[420px] p-6 bg-black text-white border border-blue-800 rounded-lg shadow-lg relative overflow-hidden group"
     >
       {/* Hover Background Animation */}
-      <div className="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <div className="absolute inset-0 bg-blue-300 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
       <div className="relative z-10 flex flex-col h-full justify-between">
         {/* Heading */}
