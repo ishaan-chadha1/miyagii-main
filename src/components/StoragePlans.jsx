@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-// Updated plans data according to the prices provided in the image
 const plans = [
   {
     name: "5 GB",
@@ -87,78 +86,91 @@ const StoragePlans = () => {
     <div className="flex flex-col items-center p-6 space-y-8">
       {/* Period and Currency Toggle */}
       <div className="flex flex-wrap items-center justify-center gap-6">
-      <div className="relative flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800">
-  <motion.div
-    className="absolute top-0 bottom-0 w-1/4 bg-white rounded-full"
-    animate={{
-      left: `${["monthly", "yearly", "sixYears", "forever"].indexOf(selectedPeriod) * 25}%`,
-    }}
-    transition={{
-      type: "spring",
-      stiffness: 500,
-      damping: 30,
-    }}
-  />
-  {["monthly", "yearly", "sixYears", "forever"].map((period) => (
-    <button
-      key={period}
-      onClick={() => handlePeriodChange(period)}
-      className={`relative z-10 px-4 py-2 text-sm font-medium ${
-        selectedPeriod === period ? "text-blue-500" : "text-white"
-      }`}
-    >
-      {period.charAt(0).toUpperCase() + period.slice(1)}
-    </button>
-  ))}
-</div>
-
+        <div className="relative flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800">
+          <motion.div
+            className="absolute top-0 bottom-0 w-1/4 bg-white rounded-full"
+            animate={{
+              left: `${
+                ["monthly", "yearly", "sixYears", "forever"].indexOf(
+                  selectedPeriod
+                ) * 25
+              }%`,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 500,
+              damping: 30,
+            }}
+          />
+          {["monthly", "yearly", "sixYears", "forever"].map((period) => (
+            <button
+              key={period}
+              onClick={() => handlePeriodChange(period)}
+              className={`relative z-10 px-4 py-2 text-sm font-medium ${
+                selectedPeriod === period ? "text-blue-500" : "text-white"
+              }`}
+            >
+              {period.charAt(0).toUpperCase() + period.slice(1)}
+            </button>
+          ))}
+        </div>
 
         {/* Currency Toggle */}
         <div className="relative flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800">
-  <motion.div
-    className="absolute top-0 bottom-0 w-1/2 bg-white rounded-full"
-    animate={{
-      left: `${currency === "inr" ? "0%" : "50%"}`,
-    }}
-    transition={{
-      type: "spring",
-      stiffness: 500,
-      damping: 30,
-    }}
-  />
-  {["inr", "usd"].map((curr) => (
-    <button
-      key={curr}
-      onClick={() => setCurrency(curr)}
-      className={`relative z-10 px-4 py-2 text-sm font-medium ${
-        currency === curr ? "text-blue-500" : "text-white"
-      }`}
-    >
-      {curr.toUpperCase()}
-    </button>
-  ))}
-</div>
-
+          <motion.div
+            className="absolute top-0 bottom-0 w-1/2 bg-white rounded-full"
+            animate={{
+              left: `${currency === "inr" ? "0%" : "50%"}`,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 500,
+              damping: 30,
+            }}
+          />
+          {["inr", "usd"].map((curr) => (
+            <button
+              key={curr}
+              onClick={() => setCurrency(curr)}
+              className={`relative z-10 px-4 py-2 text-sm font-medium ${
+                currency === curr ? "text-blue-500" : "text-white"
+              }`}
+            >
+              {curr.toUpperCase()}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div
+        className={`flex flex-wrap justify-center gap-6 px-6`}
+      >
         {plans.map((plan) => (
           <div
             key={plan.name}
-            className="border shadow-lg w-[375px] h-[225px] p-8 bg-blue-500 text-white rounded-lg transition-all duration-300 hover:bg-opacity-0 hover:text-blue-500"
+            className="w-[220px] h-[260px] p-6 bg-transparent text-white border border-blue-500 rounded-lg shadow-lg relative overflow-hidden group"
           >
-            <div className="flex flex-col space-y-2">
-              <h3 className="tracking-tight text-lg font-semibold">
+            {/* Hover Background Animation */}
+            <div className="absolute inset-0 bg-blue-200 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+            <div className="relative z-10 flex flex-col h-full justify-between">
+              {/* Heading */}
+              <h3 className="text-lg font-bold text-white group-hover:text-black text-center mb-4">
                 {plan.name}
               </h3>
-              <p className="text-sm">{plan.description}</p>
-              <p className="text-xs">{plan.info}</p>
-            </div>
-            <div className="mt-4 space-y-2">
-              <div className="flex justify-between pt-10">
-                <span>Price</span>
-                <span>{plan.prices[selectedPeriod][currency]}</span>
+
+              {/* Description */}
+              <p className="text-sm text-white group-hover:text-black text-center leading-6">
+                {plan.info}
+              </p>
+
+              {/* Price */}
+              <div className="flex justify-between mt-4 text-white group-hover:text-black">
+                <span className="font-medium">Price</span>
+                <span className="font-bold">
+                  {plan.prices[selectedPeriod][currency]}
+                </span>
               </div>
             </div>
           </div>
