@@ -149,7 +149,7 @@ const StoragePlans = () => {
         {plans.map((plan) => (
           <div
             key={plan.name}
-            className="w-[220px] h-[260px] p-6 bg-transparent text-white border border-blue-500 rounded-lg shadow-lg relative overflow-hidden group"
+            className="w-[260px] h-[240px] p-6 bg-transparent text-white border border-blue-500 rounded-lg shadow-lg relative overflow-hidden group"
           >
             {/* Hover Background Animation */}
             <div className="absolute inset-0 bg-blue-200 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
