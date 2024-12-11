@@ -10,6 +10,7 @@ import OfferTwo from "../components/OfferTwo";
 import GlideCarousel from "../components/GlideCarousel";
 import { useEffect } from "react";
 import Power from "../components/Power";
+import LandingHero from "../components/LandingHero";
 
 function HomeTwo() {
   useEffect(()=>{
@@ -19,6 +20,7 @@ function HomeTwo() {
     <>
       <div>
         <Header />
+        <LandingHero />
         <HeroTwo />
 
         <Power />
