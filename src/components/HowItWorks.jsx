@@ -78,99 +78,116 @@ const HowItWorks = () => {
       </div>
 
       {/* Features Section */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "flex-start",
-          gap: "20px",
-        }}
-      >
-        {/* Feature 1 */}
-        <div style={{ flex: 1, textAlign: "center", padding: "20px" }}>
-          <h3
-            style={{
-              fontSize: "1.5rem",
-              fontWeight: "bold",
-              textTransform: "uppercase",
-              marginBottom: "20px",
-            }}
-          >
-            Decentralized Storage and Verifiable Uploads
-          </h3>
-          <img
-            src="public/Asset_Decentralised_003.png"
-            alt="Decentralized Storage"
-            style={{
-              width: "150px", // Reduced size
-              height: "150px", // Maintain aspect ratio
-              marginLeft:"80px",
-              marginBottom: "20px",
-            }}
-          />
-          <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-            Data is encoded and split into smaller chunks and distributed across multiple nodes to
-            enhance redundancy and reliability. This ensures that the file is securely stored and
-            accessible while maintaining data integrity.
-          </p>
-        </div>
+{/* Features Section */}
+<div
+  style={{
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    gap: "20px",
+  }}
+>
+  {/* Feature 1 */}
+  <div style={{ flex: 1, textAlign: "center", padding: "20px" }}>
+    <h3
+      style={{
+        fontSize: "1.5rem",
+        fontWeight: "bold",
+        textTransform: "uppercase",
+        marginBottom: "20px",
+      }}
+    >
+      Decentralized Storage and Verifiable Uploads
+    </h3>
+    <img
+      src="public/Asset_Decentralised_003.png"
+      alt="Decentralized Storage"
+      style={{
+        width: "150px",
+        height: "150px",
+        marginBottom: "20px",
+      }}
+    />
+    <p
+      style={{
+        fontSize: "1rem",
+        lineHeight: "1.6",
+        textAlign: "left", // Ensure only the paragraph text is left-aligned
+      }}
+    >
+      Data is encoded and split into smaller chunks and distributed across multiple nodes to
+      enhance redundancy and reliability. This ensures that the file is securely stored and
+      accessible while maintaining data integrity.
+    </p>
+  </div>
 
-        {/* Feature 2 */}
-        <div style={{ flex: 1, textAlign: "center", padding: "20px" }}>
-          <h3
-            style={{
-              fontSize: "1.5rem",
-              fontWeight: "bold",
-              textTransform: "uppercase",
-              marginBottom: "20px",
-            }}
-          >
-            E-Sign
-          </h3>
-          <img
-            src="/public/Asset_ESIGN.png"
-            alt="E-Sign"
-            style={{
-              width: "150px", // Reduced size
-              height: "150px", // Maintain aspect ratio
-              marginLeft:"80px",
-              marginBottom: "20px",
-            }}
-          />
-          <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-            Experience secure, efficient, and versatile document signing with Miyagi.
-          </p>
-        </div>
+  {/* Feature 2 */}
+  <div style={{ flex: 1, textAlign: "center", padding: "20px" }}>
+    <h3
+      style={{
+        fontSize: "1.5rem",
+        fontWeight: "bold",
+        textTransform: "uppercase",
+        marginBottom: "20px",
+      }}
+    >
+      E-Sign
+    </h3>
+    <img
+      src="/public/Asset_ESIGN.png"
+      alt="E-Sign"
+      style={{
+        width: "150px",
+        height: "150px",
+        marginBottom: "20px",
+      }}
+    />
+    <p
+      style={{
+        fontSize: "1rem",
+        lineHeight: "1.6",
+        textAlign: "left", // Ensure only the paragraph text is left-aligned
+      }}
+    >
+      Experience secure, efficient, and versatile document signing with Miyagi.
+    </p>
+  </div>
 
-        {/* Feature 3 */}
-        <div style={{ flex: 1, textAlign: "center", padding: "20px" }}>
-          <h3
-            style={{
-              fontSize: "1.5rem",
-              fontWeight: "bold",
-              textTransform: "uppercase",
-              marginBottom: "20px",
-            }}
-          >
-            Encryption and Decryption
-          </h3>
-          <img
-            src="public/Asset_Encryption.png"
-            alt="Encryption"
-            style={{
-              width: "150px", // Reduced size
-              marginLeft:"80px",
-              height: "150px", // Maintain aspect ratio
-              marginBottom: "20px",
-            }}
-          />
-          <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-            Miyagi uses AES encryption to secure files, accessible only with the correct decryption
-            key. To decrypt a file, a corresponding decryption algorithm is utilized to restore the
-            file to its original state.
-          </p>
-        </div>
-      </div>
+  {/* Feature 3 */}
+  <div style={{ flex: 1, textAlign: "center", padding: "20px" }}>
+    <h3
+      style={{
+        fontSize: "1.5rem",
+        fontWeight: "bold",
+        textTransform: "uppercase",
+        marginBottom: "20px",
+      }}
+    >
+      Encryption and Decryption
+    </h3>
+    <img
+      src="public/Asset_Encryption.png"
+      alt="Encryption"
+      style={{
+        width: "150px",
+        height: "150px",
+        marginBottom: "20px",
+      }}
+    />
+    <p
+      style={{
+        fontSize: "1rem",
+        lineHeight: "1.6",
+        textAlign: "left", // Ensure only the paragraph text is left-aligned
+      }}
+    >
+      Miyagi uses AES encryption to secure files, accessible only with the correct decryption
+      key. To decrypt a file, a corresponding decryption algorithm is utilized to restore the
+      file to its original state.
+    </p>
+  </div>
+</div>
+
     </div>
   );
 };
