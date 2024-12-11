@@ -28,7 +28,7 @@ function StorageBanner() {
       ></div>
 
       {/* Content Section */}
-      <h1 className="text-5xl md:text-6xl font-bold mb-6 z-10 leading-tight">
+      <h1 className="text-5xl md:text-6xl font-bold mb-6 z-10 leading-tight pt-20">
         IPFS-The Gateway To <br />
         Decentralisation
       </h1>
